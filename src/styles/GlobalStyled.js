@@ -13,7 +13,6 @@ export const Container = styled.div`
   max-width: 1280px;
   margin: auto;
   letter-spacing: 0.17rem;
-  font-weight: 480;
   
   `
 
@@ -47,14 +46,14 @@ export const Container = styled.div`
     font-size: ${({ size }) => {
       switch(size){
         case 'h1':
-          return '4.5rem';
+          return '3rem';
         
         case 'h2':
-          return '3rem';
+          return '2rem';
         
 
         case 'h3':
-          return '2rem';
+          return '1.5rem';
         
         case 'h4':
           return '1.2 rem';
