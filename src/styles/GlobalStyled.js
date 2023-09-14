@@ -25,6 +25,8 @@ export const Container = styled.div`
   `
 
   export const Flexcontainer = styled.div`
+    padding-top: ${({ top }) => top};
+    padding-bottom: ${({ bottom }) => bottom};  
     display: flex;
     justify-content: ${({ justify }) => justify};
     align-items: ${({ align }) => align};
@@ -82,6 +84,9 @@ export const Container = styled.div`
   export const ParaText = styled(PaddingContainer)`
     color: ${({ theme }) => theme.colors.para_text_color};
     line-height: 2rem;
+    background-image:linear-gradient(to right, #0d1422, #042838);
+    border-radius: 20px;
+    
   `
 
   export const IconContainer = styled.div`

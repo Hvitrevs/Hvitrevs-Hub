@@ -15,15 +15,14 @@ const Showcase = () => {
       <Flexcontainer  fullWidthChild>
         <div>
           <Heading size='h4'>Hello</Heading>
-          <Heading size='h1' top='0.5rem' bottom='0.5rem'> I'm <LeText> Hvitrevs 🦊 </LeText> </Heading>
-          <Heading size='h3' > I like building <LeText> web apps </LeText> </Heading>
+          <Heading size='h1' top='1rem' bottom='1rem'> I'm <LeText> Hvitrevs 🦊 </LeText> </Heading>
+          <Heading size='h3' bottom='2rem' > I like building <LeText> web apps </LeText> </Heading>
 
-          <ParaText as='p' top='2rem'>
+          <ParaText as='h4' top='2rem'bottom='2rem'>
           I'm facinated with AI and Machine Learning.
           Currently I am working on designing and creating different user-friendly websites and applications. 
-
           </ParaText>
-          <Flexcontainer>
+          <Flexcontainer top='1rem' bottom='1rem' gap='1.5rem'>
             <IconContainer color='white' size='1.5rem'>
               <BsGithub />
             </IconContainer>
