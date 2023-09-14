@@ -12,6 +12,8 @@ export const Container = styled.div`
   width: 90%;
   max-width: 1280px;
   margin: auto;
+  letter-spacing: 0.17rem;
+  font-weight: 480;
   
   `
 
@@ -56,6 +58,12 @@ export const Container = styled.div`
         
         case 'h4':
           return '1.2 rem';
+
+        case 'h5':
+          return '1 rem';
+
+        case 'h6':
+          return '0.8 rem';
 
         
         default:

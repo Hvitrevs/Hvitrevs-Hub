@@ -1,11 +1,11 @@
 export const theme = {
   colors: {
-    primary: '#0f172a',
+    primary: '#0b1224',
     primary_light: '#131c31',
     secondary: '#7eadfc',
-    white: '#fff',
+    white: '#a5bdcc',
     black: '#000',
-    para_text_color: '#dcdcdc',
+    para_text_color: '#85a3b4',
   },
   fonts: {
     family: 'Ubuntu',

@@ -10,6 +10,12 @@ const Showcase = () => {
       top= '15%'
       bottom= '10%'
     > 
+
+      <Flexcontainer align='center' fullWidthChild>
+        <div>
+          <Heading size='h5'>Hello</Heading>
+        </div>
+      </Flexcontainer>
     </PaddingContainer>
   )
 }
