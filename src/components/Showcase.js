@@ -1,6 +1,7 @@
 import React from 'react';
-import { PaddingContainer, Flexcontainer, Heading, ParaText, LeText, IconContainer } from '../styles/GlobalStyled';
+import { PaddingContainer, Flexcontainer, Heading, ParaText, LeText, IconContainer, Smile } from '../styles/GlobalStyled';
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import "../index.css"
 
 const Showcase = () => {
   return (
@@ -15,7 +16,8 @@ const Showcase = () => {
       <Flexcontainer  fullWidthChild>
         <div>
           <Heading size='h4'>Hello</Heading>
-          <Heading size='h1' top='1rem' bottom='1rem'> I'm <LeText> Hvitrevs 🦊 </LeText> </Heading>
+          <Heading size='h1' top='1rem' bottom='1rem'>I'm<LeText> Hvitrevs<Smile>🦊</Smile> </LeText> </Heading>
+
           <Heading size='h3' bottom='2rem' > I like building <LeText> web apps </LeText> </Heading>
 
           <ParaText as='h4' top='2rem'bottom='2rem'>

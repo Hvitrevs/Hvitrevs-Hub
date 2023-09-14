@@ -43,12 +43,14 @@ export const Container = styled.div`
   // wrap the padding container component inside the the styled constructor so the heafer component will be using properties of of the padding container (paddint-top, padding-bottom, etc)
 
   export const Heading = styled(PaddingContainer)`
+
     color: ${({ theme }) => theme.colors.white};
     text-align: ${({ align }) => align};
     font-size: ${({ size }) => {
       switch(size){
         case 'h1':
           return '3rem';
+          
         
         case 'h2':
           return '2rem';
@@ -79,6 +81,8 @@ export const Container = styled.div`
 
   export const LeText = styled.span`
     color: ${({ theme }) => theme.colors.secondary};
+
+    
   `
 
   export const ParaText = styled(PaddingContainer)`
@@ -87,6 +91,14 @@ export const Container = styled.div`
     background-image:linear-gradient(to right, #0d1422, hsla(206, 96.90%, 12.70%, 0.28));
     border-radius: 20px;
     
+  `
+  export const Smile = styled.span`
+    font-size: 2rem; 
+  
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      display: flex;
+    }
   `
 
   export const IconContainer = styled.div`
