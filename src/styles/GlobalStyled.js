@@ -84,7 +84,7 @@ export const Container = styled.div`
   export const ParaText = styled(PaddingContainer)`
     color: ${({ theme }) => theme.colors.para_text_color};
     line-height: 2rem;
-    background-image:linear-gradient(to right, #0d1422, #042838);
+    background-image:linear-gradient(to right, #0d1422, hsla(206, 96.90%, 12.70%, 0.28));
     border-radius: 20px;
     
   `
