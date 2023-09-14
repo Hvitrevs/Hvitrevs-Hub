@@ -66,3 +66,31 @@ export const Container = styled.div`
 
     }}
   `
+
+
+  export const LeText = styled.span`
+    color: ${({ theme }) => theme.colors.secondary};
+  `
+
+  export const ParaText = styled(PaddingContainer)`
+    color: ${({ theme }) => theme.colors.para_text_color};
+    line-height: 2rem;
+  `
+
+  export const IconContainer = styled.div`
+    font-size: ${({ size }) => size};
+    cursor: pointer;
+    color: ${({ color, theme }) => {
+      switch(color){
+        case 'white':
+          return theme.colors.white;
+
+        case 'le':
+          return theme.colors.secondary;
+
+        default:
+          return;
+      }
+    }}
+  `
+
