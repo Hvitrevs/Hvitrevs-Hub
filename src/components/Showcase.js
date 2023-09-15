@@ -3,6 +3,7 @@ import { PaddingContainer, Flexcontainer, Heading, ParaText, LeText, IconContain
 import { FaGithubAlt, FaCodepen,  } from 'react-icons/fa6'
 import { CiLinkedin  } from 'react-icons/ci'
 import "../index.css"
+import { ShowcaseParticleContainer } from '../styles/Showcase.styled';
 
 
 
@@ -40,6 +41,13 @@ const Showcase = () => {
           </Flexcontainer>
           
         </div>
+        {/* right container */}
+        <Flexcontainer>
+          <ShowcaseParticleContainer>
+            
+
+          </ShowcaseParticleContainer>
+        </Flexcontainer>
       </Flexcontainer>
     </PaddingContainer>
   )
