@@ -3,7 +3,8 @@ import { PaddingContainer, Flexcontainer, Heading, ParaText, LeText, IconContain
 import { FaGithubAlt, FaCodepen,  } from 'react-icons/fa6'
 import { CiLinkedin  } from 'react-icons/ci'
 import "../index.css"
-import { ShowcaseParticleContainer } from '../styles/Showcase.styled';
+import { ShowcaseImageCard, ShowcaseParticleContainer } from '../styles/Showcase.styled';
+import ShowcaseImg from '../assets/abstract1.png';
 
 
 
@@ -18,6 +19,8 @@ const Showcase = () => {
     > 
 
       <Flexcontainer  fullWidthChild>
+
+        {/* left container */}
         <div>
           <Heading size='h4'>Hello</Heading>
           <Heading size='h1' top='1rem' bottom='1rem'>I'm<LeText> Hvitrevs🦊 </LeText> </Heading>
@@ -42,9 +45,11 @@ const Showcase = () => {
           
         </div>
         {/* right container */}
-        <Flexcontainer>
+        <Flexcontainer justify='flex-end'>
           <ShowcaseParticleContainer>
-            
+            <ShowcaseImageCard>
+              <img src={ShowcaseImg} alt='showcaseImg' />
+            </ShowcaseImageCard>
 
           </ShowcaseParticleContainer>
         </Flexcontainer>
