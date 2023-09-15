@@ -8,6 +8,7 @@ import ShowcaseImg from '../assets/abstract1.png';
 
 
 
+
 const Showcase = () => {
   return (
     <PaddingContainer
@@ -45,7 +46,7 @@ const Showcase = () => {
           
         </div>
         {/* right container */}
-        <Flexcontainer justify='flex-end'>
+        <Flexcontainer justify='end'>
           <ShowcaseParticleContainer>
             <ShowcaseImageCard>
               <img src={ShowcaseImg} alt='showcaseImg' />

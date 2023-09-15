@@ -3,9 +3,9 @@ export const theme = {
     primary: '#040c1e',
     primary_light: '#131c31',
     secondary: '#d57c3d',
-    white: '#a5bdcc',
+    white: '#85b2ce',
     black: '#000',
-    para_text_color: '#85a3b4',
+    para_text_color: '#476387',
   },
   fonts: {
     family: 'Ubuntu',

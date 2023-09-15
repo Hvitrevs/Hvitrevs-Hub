@@ -3,6 +3,7 @@ import { Container, MainBody } from "./styles/GlobalStyled";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./utils/Theme";
 import Showcase from "./components/Showcase";
+import MySkills from "./components/MySkills";
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <MainBody>
       <Container>
         <Showcase />
-        
+        <MySkills />
       </Container>
     </MainBody> 
       
