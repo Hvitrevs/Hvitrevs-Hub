@@ -7,6 +7,14 @@ export const theme = {
     black: '#000',
     para_text_color: '#476387',
   },
+  colors1: {
+    primary: '#e0e9ff',
+    primary_light: '#131c31',
+    secondary: '#d57c3d',
+    white: '#5383a1',
+    black: '#000',
+    para_text_color: '#476387',
+  },
   fonts: {
     family: 'Ubuntu',
     weight:{
