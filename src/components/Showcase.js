@@ -1,14 +1,17 @@
 import React from 'react';
-import { PaddingContainer, Flexcontainer, Heading, ParaText, LeText, IconContainer, Smile } from '../styles/GlobalStyled';
-import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import { PaddingContainer, Flexcontainer, Heading, ParaText, LeText, IconContainer } from '../styles/GlobalStyled';
+import { FaGithubAlt, FaCodepen,  } from 'react-icons/fa6'
+import { CiLinkedin  } from 'react-icons/ci'
 import "../index.css"
+
+
 
 const Showcase = () => {
   return (
     <PaddingContainer
       id= 'Home'
       left= '3%'
-      right= '10%'
+      right= '5%'
       top= '15%'
       bottom= '10%'
     > 
@@ -16,22 +19,26 @@ const Showcase = () => {
       <Flexcontainer  fullWidthChild>
         <div>
           <Heading size='h4'>Hello</Heading>
-          <Heading size='h1' top='1rem' bottom='1rem'>I'm<LeText> Hvitrevs<Smile>🦊</Smile> </LeText> </Heading>
+          <Heading size='h1' top='1rem' bottom='1rem'>I'm<LeText> Hvitrevs🦊 </LeText> </Heading>
 
           <Heading size='h3' bottom='2rem' > I like building <LeText> web apps </LeText> </Heading>
 
           <ParaText as='h4' top='2rem'bottom='2rem'>
-          I'm facinated with AI and Machine Learning.
+          I am facinated with AI and Machine Learning.
           Currently I am working on designing and creating different user-friendly websites and applications. 
           </ParaText>
           <Flexcontainer top='1rem' bottom='1rem' gap='1.5rem'>
             <IconContainer color='white' size='1.5rem'>
-              <BsGithub />
+              <FaGithubAlt />
+            </IconContainer>
+            <IconContainer color='le' size='1.5rem'>
+              <FaCodepen />
             </IconContainer>
             <IconContainer color='white' size='1.5rem'>
-              <BsLinkedin />
+              <CiLinkedin />
             </IconContainer>
           </Flexcontainer>
+          
         </div>
       </Flexcontainer>
     </PaddingContainer>

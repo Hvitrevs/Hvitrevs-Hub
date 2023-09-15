@@ -43,7 +43,6 @@ export const Container = styled.div`
   // wrap the padding container component inside the the styled constructor so the heafer component will be using properties of of the padding container (paddint-top, padding-bottom, etc)
 
   export const Heading = styled(PaddingContainer)`
-
     color: ${({ theme }) => theme.colors.white};
     text-align: ${({ align }) => align};
     font-size: ${({ size }) => {
@@ -88,17 +87,10 @@ export const Container = styled.div`
   export const ParaText = styled(PaddingContainer)`
     color: ${({ theme }) => theme.colors.para_text_color};
     line-height: 2rem;
-    background-image:linear-gradient(to right, #0d1422, hsla(206, 96.90%, 12.70%, 0.28));
-    border-radius: 20px;
+    background-image:linear-gradient(to right,  hsla(206, 91.30%, 9.00%, 0.00), hsla(212, 67.40%, 16.90%, 0.11));
+    border-radius: 15px;
     
-  `
-  export const Smile = styled.span`
-    font-size: 2rem; 
-  
-    @media screen and (max-width: 768px) {
-      flex-wrap: wrap;
-      display: flex;
-    }
+    
   `
 
   export const IconContainer = styled.div`
