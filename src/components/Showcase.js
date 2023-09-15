@@ -23,10 +23,10 @@ const Showcase = () => {
 
         {/* left container */}
         <div>
-          <Heading size='h4'>Hello</Heading>
-          <Heading size='h1' top='1rem' bottom='1rem'>I'm<LeText> Hvitrevs🦊 </LeText> </Heading>
+          <Heading size='h4'>Hello!</Heading>
+          <Heading as='h1' size='h1' top='1rem' bottom='1rem'>I'm<LeText> Hvitrevs🦊 </LeText> </Heading>
 
-          <Heading size='h3' bottom='2rem' > I like building <LeText> web apps </LeText> </Heading>
+          <Heading as='h1' size='h3' bottom='2rem' > I like building <LeText> web apps </LeText> </Heading>
 
           <ParaText as='h4' top='2rem'bottom='2rem'>
           I am facinated with AI and Machine Learning.
