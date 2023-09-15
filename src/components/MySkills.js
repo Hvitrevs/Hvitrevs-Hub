@@ -1,6 +1,6 @@
 import React from 'react'
 import { Flexcontainer, PaddingContainer, Heading, IconContainer, ParaText, LeText   } from '../styles/GlobalStyled'
-import { SkillsCardContainer } from '../styles/MySkills.styled'
+import { SkillCard, SkillsCardContainer } from '../styles/MySkills.styled'
 import { Skills } from '../utils/Data'
 
 
@@ -15,7 +15,9 @@ const MySkills = () => {
       <Flexcontainer fullWidthChild>
         <SkillsCardContainer>
           {Skills.map((skill) => (
-            <div>{skill.tech}</div>
+            <SkillCard>
+              
+            </SkillCard>
           ))}
 
         </SkillsCardContainer>
