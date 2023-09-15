@@ -1,5 +1,5 @@
-import { FaReact, FaNode, FaCss3Alt } from 'react-icons/fa';
-import { SiJavascript, } from 'react-icons/si';
+import { FaReact, FaNode,} from 'react-icons/fa';
+import { SiExpress, SiMongodb, } from 'react-icons/si';
 
 export const Skills = [
   {
@@ -16,14 +16,14 @@ export const Skills = [
   },
   {
     id: 2,
-    tech: 'CSS',
-    icon: <FaCss3Alt />
+    tech: 'Express',
+    icon: <SiExpress />
 
   },
   {
     id: 3,
-    tech: 'JavaScript',
-    icon: <SiJavascript />
+    tech: 'MongoDB',
+    icon: <SiMongodb />
 
   },
 

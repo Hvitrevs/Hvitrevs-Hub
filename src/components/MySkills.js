@@ -13,10 +13,18 @@ const MySkills = () => {
       bottom='10%'
     >
       <Flexcontainer fullWidthChild>
+
+        {/* left side */}
         <SkillsCardContainer>
           {Skills.map((skill) => (
             <SkillCard>
-              
+              <IconContainer size='5rem' color='le' >
+                {skill.icon}
+
+              </IconContainer>
+              <Heading as='h4' size='h4'>
+                {skill.tech}
+              </Heading>
             </SkillCard>
           ))}
 
