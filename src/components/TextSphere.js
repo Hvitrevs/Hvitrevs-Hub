@@ -33,6 +33,8 @@ const TextSphere = () => {
         "Typescript",
         "Adobe I",
         "Blender",
+        "Python",
+        "Express",
         "Linux",
         
       ];
