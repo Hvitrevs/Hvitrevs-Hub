@@ -12,7 +12,7 @@ const MySkills = () => {
       top=' 10%'
       bottom='10%'
     >
-      <Heading align='center' size='h1' bottom='3rem'> SKILLS</Heading>
+      <Heading align='center' as='h4' size='h1' bottom='3rem'> SKILLS</Heading>
        
       <Flexcontainer fullWidthChild>
        
@@ -38,7 +38,7 @@ const MySkills = () => {
 
         <div>
 
-          <Heading  size='h2' top='0,5rem'>
+          <Heading as='h4' size='h2' top='0,5rem'>
            WHAT <LeText> I do and familiar with</LeText>
           </Heading>
           <ParaText as='h4' top='2rem' bottom='1.5rem' right='1rem'>

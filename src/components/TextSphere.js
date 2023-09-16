@@ -40,7 +40,7 @@ const TextSphere = () => {
       ];
 
       const options = {
-        radius: 250,
+        radius: 450,
         maxSpeed: "normal",
         initSpeed: "normal",
         keep: false,

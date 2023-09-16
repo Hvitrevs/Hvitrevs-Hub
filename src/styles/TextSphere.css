@@ -12,13 +12,13 @@
 }
 
 .tagcloud {
-    display: inline-block;
+    display: flex;
     top: 0;
-    left: -20;
+    left: 0;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     letter-spacing: 0.3rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 /* Change color of each text in sphere on hover   */
