@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./utils/Theme";
 import Showcase from "./components/Showcase";
 import MySkills from "./components/MySkills";
+import TextSphere from "./components/TextSphere";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Container>
         <Showcase />
         <MySkills />
+        <TextSphere />
       </Container>
     </MainBody> 
       
