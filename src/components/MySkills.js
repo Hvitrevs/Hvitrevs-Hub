@@ -45,7 +45,7 @@ const MySkills = () => {
           I have hands-on experience with a variety of projects, from e-commerce platforms to data-driven web applications.
           </ParaText>
           <ParaText  top='2rem' bottom='1.5rem' right='1rem'>
-          I like creating interactive front-end interfaces using React and even do some server side with Node.js and MongoDB. 
+          I like creating interactive front-end interfaces using React and even handle some server side with Node.js and MongoDB. 
           </ParaText>
           <ParaText  top='2rem' bottom='1.5rem' right='1rem'>
           I bring AI-powered intelligence to web development, enhancing user experiences through technologies like machine learning and natural language processing.

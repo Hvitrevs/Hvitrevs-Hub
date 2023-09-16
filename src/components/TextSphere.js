@@ -24,6 +24,7 @@ const TextSphere = () => {
         "Jquery",
         "Vite",
         "NodeJs",
+        "WordPress",
         "GIT",
         "GITHUB",
         "Photoshop",
