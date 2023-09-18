@@ -42,7 +42,7 @@ const MySkills = () => {
             WHAT <LeText> I can do </LeText>
           </Heading>
           <ParaText as='h4' top='2rem' bottom='1.5rem' right='1rem'>
-          I have hands-on experience with a variety of projects, from e-commerce platforms to data-driven web applications
+          I have hands-on experience with a variety of projects, from e-commerce platforms and WordPress to data-driven web applications
           </ParaText>
           <ParaText  top='2rem' bottom='1.5rem' right='1rem'>
           I like creating interactive front-end interfaces using React and have experience handling  server side with Node.js and MongoDB 
