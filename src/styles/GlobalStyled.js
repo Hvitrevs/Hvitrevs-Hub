@@ -115,3 +115,22 @@ export const Container = styled.div`
     }}
   `
 
+
+  export const Button = styled.a`
+    display: inline-block;
+    width: max-content;
+    padding: 1rem 2rem;
+    color: ${({ theme }) => theme.colors.white};
+    background-color: transparent;
+    border: 1px solid ${({ theme }) => theme.colors.secondary};
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow:0 0 10px #ff8427;
+
+    &:hover{
+      
+      box-shadow:0 0 20px #2793ff;
+      border: transparent;
+    }
+  `
