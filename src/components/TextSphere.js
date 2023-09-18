@@ -3,11 +3,14 @@ import "../styles/TextSphere.css";
 
 // Importing TagCloud package
 import TagCloud from "TagCloud";
+import { Heading, LeText } from "../styles/GlobalStyled";
 
 const TextSphere = () => {
   
+  
   useEffect(() => {
     return () => {
+      
       const container = ".tagcloud";
       const texts = [
         "HTML",
@@ -52,7 +55,9 @@ const TextSphere = () => {
   }, []);
 
   return (
+    
     <>
+      <Heading align='center' as='h4' size='h3' top='7rem'> SKILL<LeText> CLOUD</LeText></Heading>
       <div className="text-shpere">
         {/* span tag className must be "tagcloud"  */}
         <span className="tagcloud"></span>

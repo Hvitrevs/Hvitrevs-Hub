@@ -1,9 +1,8 @@
 import React from 'react'
-import { Button, Flexcontainer, Heading, IconContainer, PaddingContainer, ParaText } from '../../styles/GlobalStyled'
+import { Flexcontainer, Heading, IconContainer, PaddingContainer, ParaText } from '../../styles/GlobalStyled'
 import { FaGithubAlt } from 'react-icons/fa6'
 import {  PiFlyingSaucer } from 'react-icons/pi'
 import { ProjectImage, ProjectImageContainer, TechStackCard } from '../../styles/Projects.styled'
-import Desktop2 from '../../assets/desktop2.png'
 
 const Project = ({ data }) => {
   return (
@@ -23,7 +22,7 @@ const Project = ({ data }) => {
             
           </Flexcontainer>
         </PaddingContainer>
-        <ParaText top='1.5rem' bottom='2rem'>
+        <ParaText top='1rem' bottom='1rem'>
           {data.project_desc}
         </ParaText>
         <IconContainer color='le' size='1.5rem' top='1rem' gap='1rem' bottom='0.5rem'>

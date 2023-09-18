@@ -22,8 +22,8 @@ export const ProjectImageContainer = styled.div`
 `
 export const ProjectImage = styled.img`
   border: 1px solid transparent;
-  width: 500px;
-  height: 300px;
+  width: 400px;
+  height: 250px;
   object-fit: cover;
   border-radius: 35px;
   opacity:60%;

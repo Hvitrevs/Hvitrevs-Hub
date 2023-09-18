@@ -19,7 +19,7 @@ const Projects = () => {
 
       
       {projectDetails.map((project) =>(
-        <PaddingContainer key={project.id} top='5rem' bottom='5rem'>
+        <PaddingContainer key={project.id} top='3rem' bottom='3rem'>
           <Project data={project} />
         </PaddingContainer>
       ))}
