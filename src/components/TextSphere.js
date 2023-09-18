@@ -36,11 +36,12 @@ const TextSphere = () => {
         "Python",
         "Express",
         "Linux",
+        "🦊",
         
       ];
 
       const options = {
-        radius: 450,
+        radius: 420,
         maxSpeed: "normal",
         initSpeed: "normal",
         keep: false,
