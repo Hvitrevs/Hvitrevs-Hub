@@ -1,6 +1,7 @@
 import React from 'react';
 import { Heading, LeText, PaddingContainer } from '../styles/GlobalStyled';
 import { projectDetails } from '../utils/Data';
+import Project from './layouts/Project';
 
 const Projects = () => {
   return (
@@ -16,7 +17,9 @@ const Projects = () => {
         Apps <LeText>I've built🛸 </LeText> 
       </Heading>
       {projectDetails.map((project) =>(
-        <div>{project.project_name}</div>
+        <PaddingContainer top='5rem' bottom='5rem'>
+          <Project />
+        </PaddingContainer>
       ))}
     </PaddingContainer>
   ) 
