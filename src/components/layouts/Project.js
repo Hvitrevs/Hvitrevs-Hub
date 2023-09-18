@@ -12,17 +12,19 @@ const Project = ({ data }) => {
       <div>
         <Flexcontainer align='center' gap='1rem'>
           <Heading as='h3' size='h3' bottom='1rem'>
-            Project Name
+            {data.project_name}
           </Heading>
         </Flexcontainer>
         <PaddingContainer top='1rem'>
           <Flexcontainer gap='1.5rem'>
-            <TechStackCard> Technology</TechStackCard>
-            <TechStackCard> Technology</TechStackCard>
+            {data.tech_stack.map((stack) => (
+              <TechStackCard> {stack}</TechStackCard>
+            ))}
+            
           </Flexcontainer>
         </PaddingContainer>
         <ParaText top='1.5rem' bottom='2rem'>
-          Project Description
+          {data.project_desc}
         </ParaText>
         <IconContainer color='le' size='1.5rem' top='1rem' gap='1rem' bottom='0.5rem'>
             <FaGithubAlt />
@@ -32,7 +34,7 @@ const Project = ({ data }) => {
       {/* right side of project section */}
 
       <ProjectImageContainer justify='flex-end'>
-        <ProjectImage src={Desktop2} />
+        <ProjectImage src={data.project_img} />
 
 
       </ProjectImageContainer>
