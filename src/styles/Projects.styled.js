@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const TechStackCard = styled.div`
+    border-bottom: 1px solid hsl(212, 39.10%, 29.60%); 
     display: inline-block;
     background-color: transparent;
     color: #ff883e;
@@ -16,14 +17,18 @@ export const TechStackCard = styled.div`
 export const ProjectImageContainer = styled.div`
   display: flex;
   justify-content: ${({ justify }) => justify};
+  
+  
 `
 export const ProjectImage = styled.img`
   border: 1px solid transparent;
   width: 500px;
   height: 300px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 35px;
   opacity:60%;
+  padding: 1.5rem;
+
 
   &:hover{
       

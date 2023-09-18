@@ -118,7 +118,6 @@ export const Container = styled.div`
 
 
   export const Button = styled.a`
-    display: inline-block;
     width: max-content;
     padding: 1rem 2rem;
     color: ${({ theme }) => theme.colors.white};

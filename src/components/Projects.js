@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, LeText, PaddingContainer } from '../styles/GlobalStyled';
+import { Button, Heading, LeText, PaddingContainer } from '../styles/GlobalStyled';
 import { projectDetails } from '../utils/Data';
 import Project from './layouts/Project';
 
@@ -9,7 +9,7 @@ const Projects = () => {
       id="Projects"
       top="5%"
       bottom="5%"
-    >
+      >
       <Heading size='h4'>
         Showcase
       </Heading>
@@ -23,6 +23,8 @@ const Projects = () => {
           <Project data={project} />
         </PaddingContainer>
       ))}
+
+      <Button> View All</Button>
     </PaddingContainer>
   ) 
 
