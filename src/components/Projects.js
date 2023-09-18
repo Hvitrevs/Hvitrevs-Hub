@@ -24,7 +24,7 @@ const Projects = () => {
         </PaddingContainer>
       ))}
 
-      <Button> View All</Button>
+      <Button>All</Button>
     </PaddingContainer>
   ) 
 

@@ -3,9 +3,6 @@ import styled from "styled-components";
 
 export const MainBody = styled.div`
   background-color: ${({ theme }) => theme.colors.primary};
-  margin: 0;
-
-
 `
 
 export const Container = styled.div`
