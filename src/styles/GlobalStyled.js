@@ -95,10 +95,11 @@ export const Container = styled.div`
   `
 
   export const IconContainer = styled.div`
+  
     padding-top: ${({ top }) => top};
     padding-bottom: ${({ bottom }) => bottom};
     display: flex;
-    gap: 15px;
+    gap: 25px;
     font-size: ${({ size }) => size};
     cursor: pointer;
     color: ${({ color, theme }) => {
