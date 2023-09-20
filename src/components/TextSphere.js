@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "../styles/TextSphere.css";
-
-// Importing TagCloud package
 import TagCloud from "TagCloud";
 import { Heading, LeText } from "../styles/GlobalStyled";
+
+
 
 const TextSphere = () => {
   

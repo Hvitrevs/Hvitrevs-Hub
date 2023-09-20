@@ -7,6 +7,8 @@ import { ProjectImage, ProjectImageContainer, TechStackCard } from '../../styles
 const Project = ({ data }) => {
   return (
     <Flexcontainer fullWidthChild>
+
+
       {/* left side of project section */}
       <div>
         <Flexcontainer align='center' gap='1rem'>
@@ -30,6 +32,8 @@ const Project = ({ data }) => {
             <PiFlyingSaucer />
           </IconContainer>
       </div>
+
+      
       {/* right side of project section */}
 
       <ProjectImageContainer justify='flex-end'>

@@ -26,7 +26,7 @@ export const ProjectImage = styled.img`
   height: 250px;
   object-fit: cover;
   border-radius: 35px;
-  opacity:60%;
+  opacity:100%;
   padding: 1.5rem;
 
 

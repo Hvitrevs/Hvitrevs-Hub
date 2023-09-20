@@ -13,9 +13,7 @@ const MySkills = () => {
       bottom='10%'
     >
       <Heading align='center' as='h1' size='h1' bottom='3rem'> Skills</Heading>
-       
       <Flexcontainer fullWidthChild>
-       
 
         {/* left side */}
 
