@@ -36,7 +36,7 @@ export const projectDetails = [
     id: 0,
     project_name: 'Weather Desktop Application',
     project_desc: 'This is a weather API utilizer that transforms API data from open-metio.com into readable responsive webpage.',
-    tech_stack: ['Vite', 'Javascript', 'Tailwind' ],
+    tech_stack: ['Vite', 'JavaScript', 'Tailwind' ],
     project_img: Desktop2,
     project_url: 'https://magical-concha-6ccb16.netlify.app',
     reverse: false,

@@ -57,7 +57,7 @@ const TextSphere = () => {
   return (
     
     <>
-      <Heading align='center' as='h4' size='h3' top='7rem'> SKILL<LeText> CLOUD</LeText></Heading>
+      <Heading align='center' as='h1' size='h1' top='1rem' bottom='1rem'>Skill<LeText> Cloud </LeText> </Heading>
       <div className="text-shpere">
         {/* span tag className must be "tagcloud"  */}
         <span className="tagcloud"></span>
