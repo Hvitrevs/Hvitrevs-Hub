@@ -120,7 +120,7 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.colors.white};
     background-color: transparent;
     border: 1px solid ${({ theme }) => theme.colors.secondary};
-    border-radius: 60px;
+    border-radius: 90%;
     cursor: pointer;
     transition: all 1s ease;
     box-shadow:0 0 7px #ff8427;

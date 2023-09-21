@@ -6,6 +6,7 @@ import Showcase from "./components/Showcase";
 import MySkills from "./components/MySkills";
 import TextSphere from "./components/TextSphere";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <MySkills />
         <TextSphere />
         <Projects />
+        <Footer />
       </Container>
     </MainBody> 
       

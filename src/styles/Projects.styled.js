@@ -8,6 +8,7 @@ export const TechStackCard = styled.div`
     padding: 0.3rem 0rem;
     border-radius: 5px;
     opacity: 70%;
+    
 
     &:hover{
       
@@ -19,6 +20,7 @@ export const ProjectImageContainer = styled.div`
   justify-content: ${({ justify }) => justify};
   
   
+  
 `
 export const ProjectImage = styled.img`
   border: 1px solid transparent;
@@ -28,6 +30,7 @@ export const ProjectImage = styled.img`
   border-radius: 35px;
   opacity:100%;
   padding: 1.5rem;
+ 
 
 
   &:hover{

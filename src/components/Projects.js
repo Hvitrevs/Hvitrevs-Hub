@@ -11,7 +11,7 @@ const Projects = () => {
       bottom="5%"
       >
       <Heading size='h4'>
-        Showcase
+        See what
       </Heading>
       <Heading as='h1' size='h1' top='1rem' bottom='1rem'>
         Apps <LeText>I've built🛸 </LeText> 
