@@ -1,5 +1,6 @@
 import React from 'react'
 import { Flexcontainer, Heading, PaddingContainer } from '../styles/GlobalStyled'
+import { ContactForm } from '../styles/Footer.styled'
 
 const Footer = () => {
   return (
@@ -13,7 +14,18 @@ const Footer = () => {
       </Heading>
       <PaddingContainer top='3rem'>
         <Flexcontainer justify='center'>
-          
+          <ContactForm>
+            <PaddingContainer
+              bottom='2rem'>
+                {/* <FormInput
+                  type='text'
+                  placeholder='Your name'
+                >
+                
+                </FormInput> */}
+
+              </PaddingContainer>
+          </ContactForm>
         </Flexcontainer>
       </PaddingContainer>
 
