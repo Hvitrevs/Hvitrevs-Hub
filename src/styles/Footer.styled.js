@@ -9,10 +9,18 @@ export const FormLabel = styled.p`
   padding-bottom: 10px;
 `
 export const FormInput = styled.input`
-  width:100%;
+  width: 100%;
+  border: none;
   background-color: transparent;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #d57c3d;
   border-radius: 5px;
   padding: 15px;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.secondary};
+
+  &::placeholder{
+    color: ${({ theme }) => theme.colors.white};
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    
+  }
 `
