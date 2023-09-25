@@ -6,7 +6,7 @@ export const ContactForm = styled.form`
 
 `
 export const FormLabel = styled.p`
-  color: ${({ theme }) => theme.colors.para_text_color};
+  color: ${({ theme }) => theme.colors.white};
   padding-bottom: 10px;
 `
 export const FormInput = styled.input`
@@ -23,9 +23,9 @@ export const FormInput = styled.input`
   font-family: ubuntu;
 
   &::placeholder{
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.para_text_color};
     letter-spacing: 0.1rem;
-    font-weight: bold;
+    font-weight: normal;
     
   }
 
