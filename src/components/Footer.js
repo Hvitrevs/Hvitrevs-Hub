@@ -1,17 +1,19 @@
 import React from 'react'
-import { Flexcontainer, Heading, PaddingContainer } from '../styles/GlobalStyled'
+import { Button, Flexcontainer, Heading, LeText, PaddingContainer } from '../styles/GlobalStyled'
 import { ContactForm, FormInput, FormLabel } from '../styles/Footer.styled'
 
 const Footer = () => {
   return (
     <PaddingContainer
       id='Contact'
-      top='5%'
+      top='12%'
       bottom='10%'
     >
       <Heading as='h4' size='h1' align='center'>
-        Contact        
+        Contact <LeText>me 📨 </LeText>     
       </Heading>
+      
+
       <PaddingContainer top='3rem'>
         <Flexcontainer justify='center'>
           <ContactForm>
@@ -40,6 +42,34 @@ const Footer = () => {
                 </FormInput>
 
             </PaddingContainer>
+            <PaddingContainer
+              bottom='2rem'>
+                <FormLabel>
+                  Subject:
+                </FormLabel>
+                <FormInput
+                  type='text'
+                  placeholder='Subject'
+                >
+                </FormInput>
+            </PaddingContainer>
+            <PaddingContainer
+              bottom='2rem'>
+                <FormLabel>
+                  Message:
+                </FormLabel>
+                <FormInput
+                  as='textarea'
+                  placeholder='Enter Your Message'
+                >
+                
+                </FormInput>
+
+            </PaddingContainer>
+
+            <Flexcontainer justify="center" >
+              <Button >✉️</Button>
+            </Flexcontainer>
             
           </ContactForm>
         </Flexcontainer>

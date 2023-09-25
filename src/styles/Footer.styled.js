@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ContactForm = styled.form`
+  padding-top: 2rem;
   width: 40%;
 
 `
@@ -16,6 +17,10 @@ export const FormInput = styled.input`
   border-radius: 5px;
   padding: 15px;
   color: ${({ theme }) => theme.colors.secondary};
+  outline: none;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-family: ubuntu;
 
   &::placeholder{
     color: ${({ theme }) => theme.colors.white};
@@ -23,4 +28,6 @@ export const FormInput = styled.input`
     font-weight: bold;
     
   }
+
+
 `
