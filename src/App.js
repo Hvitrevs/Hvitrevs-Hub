@@ -7,6 +7,7 @@ import MySkills from "./components/MySkills";
 import TextSphere from "./components/TextSphere";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <ThemeProvider theme ={ theme }>
     <MainBody>
       <Container>
+        <Navbar />
         <Showcase />
         <MySkills />
         <TextSphere />

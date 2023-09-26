@@ -2,6 +2,9 @@ import React from 'react'
 import { Button, Flexcontainer, Heading, LeText, PaddingContainer } from '../styles/GlobalStyled'
 import { ContactForm, FormInput, FormLabel } from '../styles/Footer.styled'
 
+
+// buiding contact form
+
 const Footer = () => {
   return (
     <PaddingContainer
@@ -12,11 +15,11 @@ const Footer = () => {
       <Heading as='h4' size='h1' align='center'>
         Contact <LeText>me 📨 </LeText>     
       </Heading>
-      
-
+      {/* adding fields */}
       <PaddingContainer top='3rem'>
         <Flexcontainer justify='center'>
           <ContactForm>
+
             <PaddingContainer
               bottom='2rem'>
                 <FormLabel>
@@ -26,9 +29,9 @@ const Footer = () => {
                   type='text'
                   placeholder='Your name'
                 >
-                
                 </FormInput>
             </PaddingContainer>
+
             <PaddingContainer
               bottom='2rem'>
                 <FormLabel>
@@ -38,10 +41,9 @@ const Footer = () => {
                   type='text'
                   placeholder='Your Email'
                 >
-                
                 </FormInput>
-
             </PaddingContainer>
+
             <PaddingContainer
               bottom='2rem'>
                 <FormLabel>
@@ -53,6 +55,7 @@ const Footer = () => {
                 >
                 </FormInput>
             </PaddingContainer>
+
             <PaddingContainer
               bottom='2rem'>
                 <FormLabel>
@@ -62,9 +65,7 @@ const Footer = () => {
                   as='textarea'
                   placeholder='Enter Your Message'
                 >
-                
                 </FormInput>
-
             </PaddingContainer>
 
             <Flexcontainer justify="center" >
