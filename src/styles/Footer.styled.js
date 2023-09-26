@@ -21,6 +21,7 @@ export const FormInput = styled.input`
   letter-spacing: 0.1rem;
   font-weight: bold;
   font-family: ubuntu;
+  height: ${({ height}) => height};
 
   &::placeholder{
     color: ${({ theme }) => theme.colors.para_text_color};

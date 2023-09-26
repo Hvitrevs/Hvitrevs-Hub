@@ -1,6 +1,6 @@
 import React from 'react'
-import { GiFox, GiFoxHead } from 'react-icons/gi'
-import { Container, Flexcontainer, IconContainer, LeText, PaddingContainer } from '../styles/GlobalStyled'
+import {  GiFoxHead } from 'react-icons/gi'
+import { Container, Flexcontainer, LeText, PaddingContainer } from '../styles/GlobalStyled'
 import { theme } from '../utils/Theme'
 import { Logo, MenuIcon, NavbarContainer } from '../styles/Navbar.styled'
 
