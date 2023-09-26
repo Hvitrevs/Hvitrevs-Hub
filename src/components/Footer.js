@@ -25,7 +25,7 @@ const Footer = () => {
                 <FormLabel>
                   Name:
                 </FormLabel>
-                <FormInput
+                <FormInput bgColor1='transparent'
                   type='text'
                   placeholder='Your name'
                 >
@@ -37,7 +37,7 @@ const Footer = () => {
                 <FormLabel>
                   Email:
                 </FormLabel>
-                <FormInput
+                <FormInput bgColor1='transparent'
                   type='text'
                   placeholder='Your Email'
                 >
@@ -49,7 +49,7 @@ const Footer = () => {
                 <FormLabel>
                   Subject:
                 </FormLabel>
-                <FormInput
+                <FormInput bgColor1='transparent'
                   type='text'
                   placeholder='Subject'
                 >
@@ -61,7 +61,7 @@ const Footer = () => {
                 <FormLabel>
                   Message:
                 </FormLabel>
-                <FormInput
+                <FormInput bgColor1='#081228'
                   as='textarea'
                   placeholder='Enter Your Message'
                 >

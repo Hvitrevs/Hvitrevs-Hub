@@ -12,7 +12,7 @@ export const FormLabel = styled.p`
 export const FormInput = styled.input`
   width: 100%;
   border: none;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ bgColor1 }) => bgColor1};
   border-bottom: 1px solid #d57c3d;
   border-radius: 5px;
   padding: 15px;
