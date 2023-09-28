@@ -3,6 +3,7 @@ import {  GiFoxHead } from 'react-icons/gi'
 import { Container, Flexcontainer, LeText, PaddingContainer } from '../styles/GlobalStyled'
 import { theme } from '../utils/Theme'
 import { Logo, MenuIcon, NavbarContainer } from '../styles/Navbar.styled'
+import NavMenu from './layouts/NavMenu'
 
 
 const Navbar = () => {
@@ -24,7 +25,7 @@ const Navbar = () => {
 
           </Flexcontainer>
         </Container>
-        {openMenu && <p> Nav Menu Opened</p>}
+        {openMenu && <NavMenu />}
       </PaddingContainer>
     </NavbarContainer>
   )
