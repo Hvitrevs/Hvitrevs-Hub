@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiOutlineClose } from 'react-icons/ai';
-import { MenuIcon, NavMenuContainer } from '../../styles/Navbar.styled';
+import { MenuIcon, MenuItem, NavMenuContainer } from '../../styles/Navbar.styled';
 import { Flexcontainer, PaddingContainer } from '../../styles/GlobalStyled';
 
 const NavMenu = ({ setOpenMenu }) => {
@@ -22,7 +22,8 @@ const NavMenu = ({ setOpenMenu }) => {
           direction='column'
           align='center'
         >
-          
+          <MenuItem color='grey'> Home page
+          </MenuItem>
         </Flexcontainer>
       </PaddingContainer>
     </NavMenuContainer>
