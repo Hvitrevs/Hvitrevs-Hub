@@ -32,7 +32,7 @@ export const NavMenuContainer = styled.div`
   top: 0;
   left: 0;
   height: 100vh;
-  width: 70%;
-  background-image:linear-gradient(to right,  hsla(206, 100.00%, 8.60%, 0.69), hsla(212, 67.40%, 16.90%, 0.97));
+  width: 100%;
+  background-color: #131c31;
   z-index: 1;
 `
