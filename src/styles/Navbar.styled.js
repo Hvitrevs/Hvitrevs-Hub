@@ -26,3 +26,13 @@ export const MenuIcon = styled.a`
   align-items: center;
 
 `
+
+export const NavMenuContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: ${({ color }) => color};
+  z-index: 1;
+`
