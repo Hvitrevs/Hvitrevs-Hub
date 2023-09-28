@@ -61,7 +61,7 @@ const Footer = () => {
                 <FormLabel>
                   Message:
                 </FormLabel>
-                <FormInput bgColor1='#081228'
+                <FormInput bgColor1='#070f23'
                   as='textarea'
                   height='150px'
                   placeholder='Enter Your Message'

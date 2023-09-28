@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {  GiFoxHead } from 'react-icons/gi'
 import { Container, Flexcontainer, LeText, PaddingContainer } from '../styles/GlobalStyled'
 import { theme } from '../utils/Theme'
@@ -6,6 +6,7 @@ import { Logo, MenuIcon, NavbarContainer } from '../styles/Navbar.styled'
 
 
 const Navbar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <NavbarContainer bgColor='transparent'>
       <PaddingContainer top='1rem' bottom='1rem'>
@@ -16,12 +17,14 @@ const Navbar = () => {
               Hvit<LeText>revs</LeText>
             </Logo>
 
-            <MenuIcon size='2rem'>
+            <MenuIcon size='2rem'
+            onClick={() => { setOpenMenu(true) }}>
                 <GiFoxHead />
               </MenuIcon>
 
           </Flexcontainer>
         </Container>
+        {openMenu && <p> Nav Menu Opened</p>}
       </PaddingContainer>
     </NavbarContainer>
   )
