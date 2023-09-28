@@ -25,7 +25,7 @@ const Navbar = () => {
 
           </Flexcontainer>
         </Container>
-        {openMenu && <NavMenu />}
+        {openMenu && <NavMenu setOpenMenu={setOpenMenu} />}
       </PaddingContainer>
     </NavbarContainer>
   )
