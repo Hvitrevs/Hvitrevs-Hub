@@ -17,6 +17,14 @@ const NavMenu = ({ setOpenMenu }) => {
         </Flexcontainer>
       </PaddingContainer>
       {/* menu items */}
+      <PaddingContainer top='8%'>
+        <Flexcontainer
+          direction='column'
+          align='center'
+        >
+          
+        </Flexcontainer>
+      </PaddingContainer>
     </NavMenuContainer>
   )
 }

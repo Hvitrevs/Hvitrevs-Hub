@@ -36,3 +36,10 @@ export const NavMenuContainer = styled.div`
   background-color: #131c31;
   z-index: 1;
 `
+export const MenuItem = styled.a`
+  color: ${({ color }) => color};
+  font-size: 2rem;
+  margitn-top: 3rem;
+  corsor: pointer;
+  text-decoration: none;
+`
