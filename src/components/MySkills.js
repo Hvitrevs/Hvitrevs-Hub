@@ -8,7 +8,7 @@ import { Skills } from '../utils/Data'
 const MySkills = () => {
   return (
     <PaddingContainer 
-      id=' Skills'
+      id='Skills'
       top=' 10%'
       bottom='10%'
     >

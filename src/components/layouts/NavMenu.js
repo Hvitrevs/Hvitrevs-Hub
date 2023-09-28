@@ -24,7 +24,7 @@ const NavMenu = ({ setOpenMenu }) => {
         >
           <MenuItem href='#Home' onClick={() => setOpenMenu(false)} color='grey'> Home page
           </MenuItem>
-          <MenuItem href='#Skills' onClick={() => setOpenMenu(false)} color='grey'> What I use and familiar with
+          <MenuItem href='#Skills' onClick={() => setOpenMenu(false)} color='grey'> Skills
           </MenuItem>
           <MenuItem href='#Projects' onClick={() => setOpenMenu(false)} color='grey'> Apps I've built
           </MenuItem>
