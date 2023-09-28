@@ -22,7 +22,13 @@ const NavMenu = ({ setOpenMenu }) => {
           direction='column'
           align='center'
         >
-          <MenuItem color='grey'> Home page
+          <MenuItem href='#Home' onClick={() => setOpenMenu(false)} color='grey'> Home page
+          </MenuItem>
+          <MenuItem href='#Skills' onClick={() => setOpenMenu(false)} color='grey'> What I use and familiar with
+          </MenuItem>
+          <MenuItem href='#Projects' onClick={() => setOpenMenu(false)} color='grey'> Apps I've built
+          </MenuItem>
+          <MenuItem href='#Contact' onClick={() => setOpenMenu(false)} color='grey'> Contacts
           </MenuItem>
         </Flexcontainer>
       </PaddingContainer>
