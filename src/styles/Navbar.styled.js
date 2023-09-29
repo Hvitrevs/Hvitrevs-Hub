@@ -39,7 +39,7 @@ export const NavMenuContainer = styled.div`
 export const MenuItem = styled.a`
   color: ${({ color }) => color};
   font-size: 2rem;
-  margitn-top: 3rem;
-  corsor: pointer;
+  margin-top: 3rem;
+  cursor: pointer;
   text-decoration: none;
 `
