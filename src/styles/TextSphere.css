@@ -11,13 +11,19 @@
     background: transparent;
     z-index: 1;
 
+    @media screen and (max-width: 1980px) {
+      display: none;
+    }
+
     @media screen and (max-width: 768px) {
-      margin-left: 10rem;
+      margin-left: 8rem;
       width: 100px;
       height: 600px;
       display: flex;
 
     }
+
+
 }
 
 .tagcloud {
