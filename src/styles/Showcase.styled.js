@@ -20,8 +20,7 @@ overflow: hidden;
   display: flex;
   flex-direction: column-reverse; 
 }
-@media screen and (max-width: 480px) {
-  display: none;
+
 }
 `
   

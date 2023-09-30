@@ -22,7 +22,8 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <NavbarContainer bgColor='transparent'>
+    <NavbarContainer 
+      bgColor={ sticky ? theme.colors.primary : 'transparent' }>
       <PaddingContainer top='1rem' bottom='1rem'>
         <Container>
           <Flexcontainer justify='space-between'>

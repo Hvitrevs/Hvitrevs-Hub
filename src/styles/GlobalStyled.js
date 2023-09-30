@@ -36,6 +36,11 @@ export const Container = styled.div`
     & > div {
       flex: ${({ fullWidthChild }) => fullWidthChild && 1};
     }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+      display: ${({ responsiveFlex }) =>
+      responsiveFlex ? 'flex': 'block'}
+    }
   `
 
   // wrap the padding container component inside the the styled constructor so the heafer component will be using properties of of the padding container (paddint-top, padding-bottom, etc)

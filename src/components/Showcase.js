@@ -32,7 +32,7 @@ const Showcase = () => {
           I am facinated with AI and Machine Learning.
           Currently I am working on designing and creating different user-friendly websites and applications. 
           </ParaText>
-          <Flexcontainer top='1rem' bottom='1rem' gap='1.5rem'>
+          <Flexcontainer top='1rem' bottom='1rem' gap='1.5rem' responsiveFlex>
             <IconContainer color='white' size='1.5rem'>
               <FaGithubAlt />
             </IconContainer>
