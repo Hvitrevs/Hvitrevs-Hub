@@ -39,7 +39,8 @@ export const Container = styled.div`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
       display: ${({ responsiveFlex }) =>
-      responsiveFlex ? 'flex': 'block'}
+      responsiveFlex ? 'flex': 'block'};
+      flex-direction: ${({ responsiveDirection }) => responsiveDirection}
     }
   `
 
