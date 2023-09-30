@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {  GiFoxHead } from 'react-icons/gi'
 import { Container, Flexcontainer, LeText, PaddingContainer } from '../styles/GlobalStyled'
 import { theme } from '../utils/Theme'
@@ -8,6 +8,19 @@ import NavMenu from './layouts/NavMenu'
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [sticky, setSticky] = useState(false);
+  useEffect(() => {
+    const onScroll = () => {
+      window.scrollY > 50 ? setSticky(true) : setSticky(false);
+    };
+  
+    window.addEventListener('scroll', onScroll);
+  
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
   return (
     <NavbarContainer bgColor='transparent'>
       <PaddingContainer top='1rem' bottom='1rem'>

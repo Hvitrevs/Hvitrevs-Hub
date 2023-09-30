@@ -25,6 +25,7 @@ const NavMenu = ({ setOpenMenu }) => {
         >
           {navLinks.map((link) => (
               <MenuItem 
+                key={link.id}
                 href={`#${link.href}`} onClick={() => setOpenMenu(false)} color='grey'> {link.name}
               </MenuItem>
           ))}

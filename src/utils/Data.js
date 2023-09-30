@@ -66,7 +66,7 @@ export const navLinks = [
   },
   {
     id: 2,
-    name: 'Projects',
+    name: 'Apps',
     href: 'Projects'
   },
   {
@@ -74,5 +74,5 @@ export const navLinks = [
     name: 'Contact',
     href: 'Contact'
   },
-  
+
 ]
