@@ -10,7 +10,7 @@ const NavMenu = ({ setOpenMenu }) => {
     // close button for side menu
     <NavMenuContainer >
       <PaddingContainer left='5%' right='5%' top='2rem'>
-        <Flexcontainer justify='flex-end'>
+        <Flexcontainer justify='flex-end' responsiveFlex>
           <MenuIcon size='2rem' onClick = {() => setOpenMenu(false)}
             >
             <AiOutlineClose />
@@ -22,6 +22,7 @@ const NavMenu = ({ setOpenMenu }) => {
         <Flexcontainer
           direction='column'
           align='center'
+          responsiveFlex
         >
           {navLinks.map((link) => (
               <MenuItem 

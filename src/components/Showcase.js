@@ -17,6 +17,9 @@ const Showcase = () => {
       right= '5%'
       top= '15%'
       bottom= '10%'
+      responsiveLeft='1rem'
+      responsiveRight='1rem'
+      responsiveTop='8rem'
     > 
 
       <Flexcontainer  fullWidthChild>

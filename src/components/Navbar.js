@@ -24,9 +24,9 @@ const Navbar = () => {
   return (
     <NavbarContainer 
       bgColor={ sticky ? theme.colors.primary : 'transparent' }>
-      <PaddingContainer top='1rem' bottom='1rem'>
+      <PaddingContainer top='1rem' bottom='1rem' responsiveRight='1rem'>
         <Container>
-          <Flexcontainer justify='space-between'>
+          <Flexcontainer justify='space-between' responsiveFlex>
 
             <Logo>
               Hvit<LeText>revs</LeText>

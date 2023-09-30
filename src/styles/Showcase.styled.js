@@ -16,7 +16,7 @@ overflow: hidden;
 
 
 @media screen and (max-width: 768px) {
-  width: 70%; 
+  width: 100%; 
   display: flex;
   flex-direction: column-reverse; 
 }
