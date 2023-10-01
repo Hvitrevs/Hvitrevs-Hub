@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
-import "../styles/TextSphere.css";
+import "../TextSphere/TextSpheremobile.css";
 import TagCloud from "TagCloud";
-import { Heading, LeText } from "../styles/GlobalStyled";
+import { Heading, LeText } from "../../styles/GlobalStyled";
 
 
 
-const TextSphere = () => {
+const TextSphereMobile = () => {
   
-  
+  // this gonna be cloud with texts 
   useEffect(() => {
     return () => {
       
@@ -70,4 +70,4 @@ const TextSphere = () => {
   );
 };
 
-export default TextSphere;
+export default TextSphereMobile;

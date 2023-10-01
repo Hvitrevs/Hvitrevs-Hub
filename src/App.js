@@ -4,10 +4,10 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./utils/Theme";
 import Showcase from "./components/Showcase";
 import MySkills from "./components/MySkills";
-import TextSphere from "./components/TextSphere";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import TextSphereMobile from "./components/TextSphere/TextSphereMobile";
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Navbar />
         <Showcase />
         <MySkills />
-        <TextSphere />
+        <TextSphereMobile />
         <Projects />
         <Footer />
       </Container>
