@@ -16,6 +16,8 @@
     }
 
     @media screen and (max-width: 768px) {
+      justify-content: center;
+      align-items: center;
       margin-left: 8rem;
       width: 100px;
       height: 600px;
@@ -34,6 +36,8 @@
     font-weight: 500;
     letter-spacing: 0.3rem;
     font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (max-width: 768px) {
       font-size: 0.5rem;
