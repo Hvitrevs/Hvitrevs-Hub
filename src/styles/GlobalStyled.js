@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 
 export const MainBody = styled.div`
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-color: ${({ theme }) => theme.colors.primary};
 `
 

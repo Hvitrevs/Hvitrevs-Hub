@@ -44,7 +44,7 @@ const TextSphereMobile = () => {
       ];
 
       const options = {
-        radius: 220,
+        radius: 240,
         maxSpeed: "normal",
         initSpeed: "normal",
         keep: false,
