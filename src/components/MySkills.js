@@ -11,9 +11,11 @@ const MySkills = () => {
       id='Skills'
       top=' 10%'
       bottom='10%'
+      responsiveLeft='1rem'
+      responsiveRight='1rem'
     >
       <Heading align='center' as='h1' size='h1' bottom='7rem'> Discover</Heading>
-      <Flexcontainer fullWidthChild>
+      <Flexcontainer responsiveFlex responsiveDirection='column-reverse' fullWidthChild>
 
         {/* left side */}
 
