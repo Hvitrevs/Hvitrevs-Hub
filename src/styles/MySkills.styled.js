@@ -7,11 +7,15 @@ export const SkillsCardContainer = styled.div`
   grid-gap: 2rem;
   padding: 0 5%;
 
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    grid-gap: 2rem;
+    padding: 0;
+  }
+
 `
 
 export const SkillCard = styled.div`
   width: 200px;
-  // border: 1px solid hsla(212, 41.70%, 24.90%, 0.65);
   padding: 3rem;
   border-radius: 1rem;
   display: flex;
@@ -19,4 +23,14 @@ export const SkillCard = styled.div`
   align-items: center;
   background-image:linear-gradient(to top,  hsla(206, 91.30%, 9.00%, 0.00), hsla(212, 67.40%, 16.90%, 0.11));
   
+
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    width:150px;
+    padding: 2rem;
+    display:flex;
+    margin-top: 2rem;
+    
+
+  }
 `
