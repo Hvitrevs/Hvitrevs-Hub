@@ -7,7 +7,7 @@ export const MainBody = styled.div`
 
 export const Container = styled.div`
 
-  width: 90%;
+  width: 85%;
   max-width: 1280px;
   margin: auto;
   letter-spacing: 0.17rem;

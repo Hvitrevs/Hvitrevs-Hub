@@ -8,7 +8,7 @@ export const SkillsCardContainer = styled.div`
   padding: 0 5%;
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     padding: 0;
   }
 
@@ -26,9 +26,9 @@ export const SkillCard = styled.div`
 
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
-    width:140px;
+    width: 130px;
     padding: 2rem;
-    display:flex;
+    display: flex;
     margin-top: 2rem;
     
 

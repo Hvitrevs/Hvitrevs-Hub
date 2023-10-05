@@ -5,8 +5,8 @@ export const ContactForm = styled.form`
   width: 40%;
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
-    width: 90%;
-    margin: auto;
+    width: 80%;
+    margin-left: 2rem;
   }
 
 `

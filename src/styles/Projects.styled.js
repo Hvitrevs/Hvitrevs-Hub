@@ -16,7 +16,6 @@ export const TechStackCard = styled.div`
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
-      margin-right: 1rem;
       margin-bottom: 1rem;
 
     }
