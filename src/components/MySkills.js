@@ -3,7 +3,7 @@ import { Flexcontainer, PaddingContainer, Heading, IconContainer, ParaText, LeTe
 import { SkillCard, SkillsCardContainer } from '../styles/MySkills.styled'
 import { Skills } from '../utils/Data'
 import { motion } from 'framer-motion'
-import { fadeInLeftVariant } from '../utils/Variants'
+import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
 
 
 const MySkills = () => {
@@ -42,7 +42,11 @@ const MySkills = () => {
         {/* right side */}
 
 
-        <motion.div>
+        <motion.div
+          variants={fadeInRightVariant}
+          initial='hidden'
+          whileInView='visible'
+        >
 
           <Heading as='h4' size='h2' top='0,5rem'>
             WHAT <LeText> I can do </LeText>
