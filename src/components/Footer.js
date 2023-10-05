@@ -69,8 +69,8 @@ const Footer = () => {
                 </FormInput>
             </PaddingContainer>
 
-            <Flexcontainer justify="center" >
-              <Button >✉️</Button>
+            <Flexcontainer justify="center">
+              <Button >📩</Button>
             </Flexcontainer>
             
           </ContactForm>
