@@ -6,6 +6,7 @@ import "../index.css"
 import { ShowcaseImageCard, ShowcaseParticleContainer } from '../styles/Showcase.styled';
 import ShowcaseImg from '../assets/abstract1.png';
 import { motion } from 'framer-motion';
+import { fadeInLeftVariant } from '../utils/Variants';
 
 
 
@@ -27,9 +28,9 @@ const Showcase = () => {
 
         {/* left container */}
         <motion.div
-          initial={{x: -50, opacity: 0}}
-          whileInView={{x: 0, opacity: 1}}
-          transition={{type: 'tween', duration: 2}}
+          variants={fadeInLeftVariant}
+          initial='hidden'
+          whileInView='visible'
         >
           <Heading size='h4'>Hello!</Heading>
           <Heading as='h1' size='h1' top='1rem' bottom='1rem'>I'm<LeText> Hvitrevs🦊 </LeText> </Heading>
