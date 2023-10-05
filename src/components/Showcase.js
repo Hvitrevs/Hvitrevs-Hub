@@ -5,6 +5,7 @@ import { CiLinkedin  } from 'react-icons/ci'
 import "../index.css"
 import { ShowcaseImageCard, ShowcaseParticleContainer } from '../styles/Showcase.styled';
 import ShowcaseImg from '../assets/abstract1.png';
+import { motion } from 'framer-motion';
 
 
 
@@ -25,7 +26,11 @@ const Showcase = () => {
       <Flexcontainer  fullWidthChild>
 
         {/* left container */}
-        <div>
+        <motion.div
+          initial={{x: -50, opacity: 0}}
+          whileInView={{x: 0, opacity: 1}}
+          transition={{type: 'tween', duration: 2}}
+        >
           <Heading size='h4'>Hello!</Heading>
           <Heading as='h1' size='h1' top='1rem' bottom='1rem'>I'm<LeText> Hvitrevs🦊 </LeText> </Heading>
 
@@ -47,7 +52,7 @@ const Showcase = () => {
             </IconContainer>
           </Flexcontainer>
           
-        </div>
+        </motion.div>
         {/* right container */}
         <Flexcontainer justify='end'>
           <ShowcaseParticleContainer>
