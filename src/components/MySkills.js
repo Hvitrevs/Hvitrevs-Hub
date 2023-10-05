@@ -2,7 +2,8 @@ import React from 'react'
 import { Flexcontainer, PaddingContainer, Heading, IconContainer, ParaText, LeText   } from '../styles/GlobalStyled'
 import { SkillCard, SkillsCardContainer } from '../styles/MySkills.styled'
 import { Skills } from '../utils/Data'
-
+import { motion } from 'framer-motion'
+import { fadeInLeftVariant } from '../utils/Variants'
 
 
 const MySkills = () => {
@@ -20,7 +21,12 @@ const MySkills = () => {
         {/* left side */}
 
 
-        <SkillsCardContainer>
+        <SkillsCardContainer
+          as={motion.div}
+          variants={fadeInLeftVariant}
+          initial='hidden'
+          whileInView='visible'
+        >
           {Skills.map((skill) => (
             <SkillCard>
               <IconContainer size='7rem' color='le' >
@@ -36,7 +42,7 @@ const MySkills = () => {
         {/* right side */}
 
 
-        <div>
+        <motion.div>
 
           <Heading as='h4' size='h2' top='0,5rem'>
             WHAT <LeText> I can do </LeText>
@@ -51,7 +57,7 @@ const MySkills = () => {
           I bring AI-powered intelligence to web development, enhancing user experiences through technologies like machine learning and natural language processing
           </ParaText>
 
-        </div>
+        </motion.div>
       </Flexcontainer>
 
 

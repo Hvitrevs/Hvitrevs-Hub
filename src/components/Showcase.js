@@ -6,7 +6,7 @@ import "../index.css"
 import { ShowcaseImageCard, ShowcaseParticleContainer } from '../styles/Showcase.styled';
 import ShowcaseImg from '../assets/abstract1.png';
 import { motion } from 'framer-motion';
-import { fadeInLeftVariant } from '../utils/Variants';
+import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
 
 
 
@@ -55,7 +55,12 @@ const Showcase = () => {
           
         </motion.div>
         {/* right container */}
-        <Flexcontainer justify='end'>
+        <Flexcontainer 
+          as={motion.div}
+          variants={fadeInRightVariant}
+          initial='hidden'
+          whileInView='visible'
+          justify='end'>
           <ShowcaseParticleContainer>
             <ShowcaseImageCard>
               <img src={ShowcaseImg} alt='showcaseImg' />
