@@ -10,6 +10,25 @@ export const fadeInLeftVariant = {
     transition: {
       type: 'tween',
       duration: 2,
+      
+    }
+  }
+}
+
+export const fadeInLeftVariantDelay = {
+  hidden: {
+    x: -50,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+
+    transition: {
+      type: 'tween',
+      duration: 2,
+      delay: 1,
+      
     }
   }
 }

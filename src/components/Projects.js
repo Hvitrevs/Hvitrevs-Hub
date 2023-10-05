@@ -3,7 +3,7 @@ import { Button, Heading, LeText, PaddingContainer } from '../styles/GlobalStyle
 import { projectDetails } from '../utils/Data';
 import Project from './layouts/Project';
 import { motion } from "framer-motion";
-import {  fadeInTopVariant } from '../utils/Variants';
+import {  fadeInLeftVariantDelay, fadeInTopVariant } from '../utils/Variants';
 
 const Projects = () => {
   return (
@@ -24,12 +24,23 @@ const Projects = () => {
 
       
       {projectDetails.map((project) =>(
-        <PaddingContainer key={project.id} top='3rem' bottom='3rem'>
-          <Project data={project} />
+        <motion.div
+        variants={fadeInLeftVariantDelay}
+        initial='hidden'
+        whileInView='visible'
+        >
+        <PaddingContainer  key={project.id} top='3rem' bottom='3rem'>
+          <Project  data={project} />
         </PaddingContainer>
+        </motion.div>
       ))}
 
-      <Button>➜</Button>
+      <motion.div
+        variants={fadeInLeftVariantDelay}
+        initial='hidden'
+        whileInView='visible'
+        ><Button>➜</Button>
+      </motion.div>
     </PaddingContainer>
   ) 
 
