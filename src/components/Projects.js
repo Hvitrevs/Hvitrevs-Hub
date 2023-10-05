@@ -9,6 +9,9 @@ const Projects = () => {
       id="Projects"
       top="5%"
       bottom="5%"
+      responsiveTop='20%'
+      responsiveLeft='1rem'
+      respoinsiveRight='1rem'
       >
       <Heading size='h4'>
         See what

@@ -14,6 +14,11 @@ export const TechStackCard = styled.div`
       
       opacity:100%;
     }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+      margin-right: 1rem;
+
+    }
 `
 export const ProjectImageContainer = styled.div`
   display: flex;
@@ -31,12 +36,12 @@ export const ProjectImage = styled.img`
   opacity:100%;
   padding: 1.5rem;
  
-
-
-  &:hover{
-      
-    opacity:100%;
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    width: 110%;
+    margin-top: 2rem;
   }
+
+
 
 
 `

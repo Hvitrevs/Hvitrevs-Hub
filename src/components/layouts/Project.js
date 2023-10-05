@@ -11,7 +11,7 @@ const Project = ({ data }) => {
 
       {/* left side of project section */}
       <div>
-        <Flexcontainer align='center' gap='1rem'>
+        <Flexcontainer  gap='1rem'>
           <Heading as='h3' size='h3' bottom='1rem'>
             {data.project_name}
           </Heading>

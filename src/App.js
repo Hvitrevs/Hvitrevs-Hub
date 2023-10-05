@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import TextSphereMobile from "./components/TextSphere/TextSphereMobile";
 
 
+
 function App() {
   return (
     <ThemeProvider theme ={ theme }>
