@@ -8,6 +8,6 @@ using React
 ```
 npm start
 ```
-
+using: recharts, framer-motion
 ## Questions
 
