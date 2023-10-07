@@ -26,6 +26,7 @@ export const MenuIcon = styled.a`
   display: flex;
   align-items: center;
 
+
 `
 
 export const MenuItem = styled.a`
@@ -46,4 +47,32 @@ export const NavMenuContainer = styled.div`
   background-image:linear-gradient(to bottom,  hsla(222, 100.00%, 10.40%), hsla(236, 100.00%, 5.30%, 0.69));
   z-index: 1;
   
+`
+
+export const MenuHidden = styled.a`
+  @media screen and (max-width: 1980px) {
+    display: none;
+  }
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    color: ${({ theme }) => theme.colors.secondary};
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+  }
+`
+
+export const NavLinksTop = styled.a`
+  color: ${({ theme }) => theme.colors.secondary};
+  font-size: ${({ size}) => size};
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    display: none;
+  }
+
 `

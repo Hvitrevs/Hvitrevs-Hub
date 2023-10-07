@@ -2,6 +2,7 @@ import { FaReact, FaNode,} from 'react-icons/fa';
 import { SiExpress, SiMongodb, } from 'react-icons/si';
 import Desktop2 from '../assets/desktop2.png';
 import Desktop from '../assets/desktop.png';
+import { GiVikingChurch } from 'react-icons/gi';
 
 export const Skills = [
   {
@@ -57,6 +58,30 @@ export const navLinks = [
   {
     id: 0,
     name: 'Home',
+    href: 'Home'
+  },
+  {
+    id: 1,
+    name: 'Skills',
+    href: 'Skills'
+  },
+  {
+    id: 2,
+    name: 'Apps',
+    href: 'Projects'
+  },
+  {
+    id: 3,
+    name: 'Contact',
+    href: 'Contact'
+  },
+
+]
+
+export const navIcons = [
+  {
+    id: 0,
+    name: <GiVikingChurch />,
     href: 'Home'
   },
   {

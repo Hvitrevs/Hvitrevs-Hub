@@ -1,10 +1,16 @@
 import React from 'react'
 import { AiOutlineClose } from 'react-icons/ai';
-import { MenuIcon, MenuItem, NavMenuContainer } from '../../styles/Navbar.styled';
+import { MenuHidden, MenuIcon, MenuItem, NavMenuContainer } from '../../styles/Navbar.styled';
 import { Flexcontainer, PaddingContainer } from '../../styles/GlobalStyled';
 import { navLinks } from '../../utils/Data';
 import { motion } from 'framer-motion';
 import { fadeInTopVariant } from '../../utils/Variants';
+import '../../index.css';
+
+
+
+
+
 const NavMenu = ({ setOpenMenu }) => {
   return (
 
@@ -12,10 +18,13 @@ const NavMenu = ({ setOpenMenu }) => {
     <NavMenuContainer as={motion.div} variants={fadeInTopVariant} initial='hidden' animate='visible' exit='exit'>
       <PaddingContainer left='5%' right='5%' top='2rem'>
         <Flexcontainer justify='flex-end' responsiveFlex>
-          <MenuIcon as={motion.a} whileHover={{scale: 1.2}} size='2rem' onClick = {() => setOpenMenu(false)}
+
+            <MenuIcon as={motion.a} whileHover={{scale: 1.2}} size='2rem' onClick = {() => setOpenMenu(false)}
             >
             <AiOutlineClose />
-          </MenuIcon>
+            </MenuIcon>
+
+
         </Flexcontainer>
       </PaddingContainer>
       {/* menu items */}
@@ -26,11 +35,11 @@ const NavMenu = ({ setOpenMenu }) => {
           responsiveFlex
         >
           {navLinks.map((link) => (
-              <MenuItem 
+              <MenuItem
                 as={motion.a}
                 whileHover={{scale: 1.2}}
                 key={link.id}
-                href={`#${link.href}`} onClick={() => setOpenMenu(false)} color='grey'> {link.name}
+                href={`#${link.href}`} onClick={() => setOpenMenu(false)} color='orange'> {link.name}
               </MenuItem>
           ))}
         </Flexcontainer>

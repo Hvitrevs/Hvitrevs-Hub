@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react'
 import {  GiFoxHead } from 'react-icons/gi'
 import { Container, Flexcontainer, LeText, PaddingContainer } from '../styles/GlobalStyled'
 import { theme } from '../utils/Theme'
-import { Logo, MenuIcon, NavbarContainer } from '../styles/Navbar.styled'
+import { Logo, MenuHidden,  MenuItem,  NavLinksTop,  NavbarContainer } from '../styles/Navbar.styled'
 import NavMenu from './layouts/NavMenu'
 import { AnimatePresence , motion } from 'framer-motion'
+import { GiVikingChurch } from 'react-icons/gi'
+import { navIcons } from '../utils/Data'
 
 
 const Navbar = () => {
@@ -32,11 +34,24 @@ const Navbar = () => {
             <Logo>
               Hvit<LeText>revs</LeText>
             </Logo>
+            <NavLinksTop>
+            {navIcons.map((link) => (
+              <MenuItem
+                as={motion.a}
+                whileHover={{scale: 1.2}}
+                key={link.id}
+                href={`#${link.href}`} onClick={() => setOpenMenu(false)} color='orange'
+              > 
+                {link.name}
+              </MenuItem>
+          ))}
+              <GiVikingChurch />
+            </NavLinksTop>
 
-            <MenuIcon as={motion.a} whileHover={{scale: 1.2}} size='2rem'
+            <MenuHidden as={motion.a} whileHover={{scale: 1.2}} size='2rem'
             onClick={() => { setOpenMenu(true) }}>
                 <GiFoxHead />
-              </MenuIcon>
+              </MenuHidden>
 
           </Flexcontainer>
         </Container>
