@@ -48,7 +48,7 @@ export const projectDetails = [
     tech_stack: ['Vite', 'TypeScript', 'SASS', 'React' ],
     project_img: Desktop,
     project_url: 'https://incandescent-vacherin-43b64e.netlify.app',
-    reverse: true,
+    reverse: false,
   },
 
 ]

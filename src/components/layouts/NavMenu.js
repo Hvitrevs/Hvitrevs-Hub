@@ -27,6 +27,8 @@ const NavMenu = ({ setOpenMenu }) => {
         >
           {navLinks.map((link) => (
               <MenuItem 
+                as={motion.a}
+                whileHover={{scale: 1.2}}
                 key={link.id}
                 href={`#${link.href}`} onClick={() => setOpenMenu(false)} color='grey'> {link.name}
               </MenuItem>

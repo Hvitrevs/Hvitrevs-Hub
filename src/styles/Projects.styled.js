@@ -35,7 +35,6 @@ export const ProjectImage = styled.img`
   border-radius: 35px;
   opacity:100%;
   padding: 1.5rem;
- 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
     width: 110%;
     margin-top: 2rem;
