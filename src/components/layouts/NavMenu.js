@@ -4,12 +4,12 @@ import { MenuIcon, MenuItem, NavMenuContainer } from '../../styles/Navbar.styled
 import { Flexcontainer, PaddingContainer } from '../../styles/GlobalStyled';
 import { navLinks } from '../../utils/Data';
 import { motion } from 'framer-motion';
-import { slideInLeft } from '../../utils/Variants';
+import { fadeInTopVariant } from '../../utils/Variants';
 const NavMenu = ({ setOpenMenu }) => {
   return (
 
     // close button for side menu
-    <NavMenuContainer as={motion.div} variants={slideInLeft} initial='hidden' animate='visible' exit='exit'>
+    <NavMenuContainer as={motion.div} variants={fadeInTopVariant} initial='hidden' animate='visible' exit='exit'>
       <PaddingContainer left='5%' right='5%' top='2rem'>
         <Flexcontainer justify='flex-end' responsiveFlex>
           <MenuIcon size='2rem' onClick = {() => setOpenMenu(false)}
