@@ -6,6 +6,7 @@ import { ProjectImage, ProjectImageContainer, TechStackCard } from '../../styles
 import { motion } from 'framer-motion'
 import { fadeInLeftVariant, fadeInRightVariant } from '../../utils/Variants'
 import { MenuIcon } from '../../styles/Navbar.styled'
+import { Link } from 'react-router-dom'
 
 const Project = ({ data }) => {
   return (
@@ -37,13 +38,20 @@ const Project = ({ data }) => {
           {data.project_desc}
         </ParaText>
         <IconContainer  color='le' size='1.5rem' top='1rem'  bottom='0.5rem'>
-          <MenuIcon as={motion.a} whileHover={{scale: 1.2}} gap='1rem'>
-            <FaGithubAlt />
-            </MenuIcon>
-            <MenuIcon as={motion.a} whileHover={{scale: 1.2}} gap='1rem'>
-            <PiFlyingSaucer />
-            </MenuIcon>
-          </IconContainer>
+
+          <Link to={data.project_page}>
+
+              <MenuIcon as={motion.a} whileHover={{scale: 1.2}} gap='1rem'>
+                <FaGithubAlt />
+              </MenuIcon>
+          </Link>
+          <Link to={data.project_url}>
+                <MenuIcon as={motion.a} whileHover={{scale: 1.2}} gap='1rem'>
+                  <PiFlyingSaucer />
+                </MenuIcon>
+              </Link>
+        </IconContainer>
+             
       </motion.div>
 
       

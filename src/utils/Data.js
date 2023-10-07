@@ -46,6 +46,7 @@ export const projectDetails = [
     tech_stack: ['Vite', 'JavaScript', 'Tailwind' ],
     project_img: Desktop2,
     project_url: 'https://magical-concha-6ccb16.netlify.app',
+    project_page:'https://github.com/Hvitrevs/Weather-app-',
     reverse: false,
   },
   {
@@ -55,6 +56,7 @@ export const projectDetails = [
     tech_stack: ['Vite', 'TypeScript', 'SASS', 'React' ],
     project_img: Desktop,
     project_url: 'https://incandescent-vacherin-43b64e.netlify.app',
+    project_page:'https://github.com/Hvitrevs/Sales-dashboard',
     reverse: false,
   },
 
