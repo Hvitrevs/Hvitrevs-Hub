@@ -11,8 +11,10 @@ const Projects = () => {
       id="Projects"
       top="5%"
       bottom="5%"
+      left= '3%'
+      right= '5%'
       responsiveTop='20%'
-      responsiveLeft='1rem'
+      responsiveLeft='1.5rem'
       respoinsiveRight='1rem'
       >
       <Heading size='h4'as={motion.h4} variants={fadeInTopVariant} initial='hidden' whileInView='visible'>

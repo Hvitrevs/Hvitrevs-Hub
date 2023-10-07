@@ -51,7 +51,6 @@ const Project = ({ data }) => {
                 </MenuIcon>
               </Link>
         </IconContainer>
-             
       </motion.div>
 
       
