@@ -42,13 +42,13 @@ const Showcase = () => {
           Currently I am working on designing and creating different user-friendly websites and applications. 
           </ParaText>
           <Flexcontainer top='1rem' bottom='1rem' gap='1.5rem' responsiveFlex>
-            <IconContainer color='white' size='1.5rem'>
+            <IconContainer as={motion.a} whileHover={{scale: 1.2}} color='white' size='1.5rem'>
               <FaGithubAlt />
             </IconContainer>
-            <IconContainer color='le' size='1.5rem'>
+            <IconContainer as={motion.a} whileHover={{scale: 1.2}} color='le' size='1.5rem'>
               <FaCodepen />
             </IconContainer>
-            <IconContainer color='white' size='1.5rem'>
+            <IconContainer as={motion.a} whileHover={{scale: 1.2}} color='white' size='1.5rem'>
               <CiLinkedin />
             </IconContainer>
           </Flexcontainer>

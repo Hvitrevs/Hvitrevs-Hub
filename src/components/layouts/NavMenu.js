@@ -12,7 +12,7 @@ const NavMenu = ({ setOpenMenu }) => {
     <NavMenuContainer as={motion.div} variants={fadeInTopVariant} initial='hidden' animate='visible' exit='exit'>
       <PaddingContainer left='5%' right='5%' top='2rem'>
         <Flexcontainer justify='flex-end' responsiveFlex>
-          <MenuIcon size='2rem' onClick = {() => setOpenMenu(false)}
+          <MenuIcon as={motion.a} whileHover={{scale: 1.2}} size='2rem' onClick = {() => setOpenMenu(false)}
             >
             <AiOutlineClose />
           </MenuIcon>

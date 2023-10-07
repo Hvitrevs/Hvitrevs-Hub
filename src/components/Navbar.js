@@ -4,6 +4,7 @@ import { Container, Flexcontainer, LeText, PaddingContainer } from '../styles/Gl
 import { theme } from '../utils/Theme'
 import { Logo, MenuIcon, NavbarContainer } from '../styles/Navbar.styled'
 import NavMenu from './layouts/NavMenu'
+import { AnimatePresence , motion } from 'framer-motion'
 
 
 const Navbar = () => {
@@ -32,14 +33,17 @@ const Navbar = () => {
               Hvit<LeText>revs</LeText>
             </Logo>
 
-            <MenuIcon size='2rem'
+            <MenuIcon as={motion.a} whileHover={{scale: 1.2}} size='2rem'
             onClick={() => { setOpenMenu(true) }}>
                 <GiFoxHead />
               </MenuIcon>
 
           </Flexcontainer>
         </Container>
+        <AnimatePresence>
         {openMenu && <NavMenu setOpenMenu={setOpenMenu} />}
+        </AnimatePresence>
+        
       </PaddingContainer>
     </NavbarContainer>
   )

@@ -5,6 +5,7 @@ import {  PiFlyingSaucer } from 'react-icons/pi'
 import { ProjectImage, ProjectImageContainer, TechStackCard } from '../../styles/Projects.styled'
 import { motion } from 'framer-motion'
 import { fadeInLeftVariant, fadeInRightVariant } from '../../utils/Variants'
+import { MenuIcon } from '../../styles/Navbar.styled'
 
 const Project = ({ data }) => {
   return (
@@ -35,9 +36,13 @@ const Project = ({ data }) => {
         <ParaText top='1rem' bottom='1rem'>
           {data.project_desc}
         </ParaText>
-        <IconContainer color='le' size='1.5rem' top='1rem' gap='1rem' bottom='0.5rem'>
+        <IconContainer  color='le' size='1.5rem' top='1rem'  bottom='0.5rem'>
+          <MenuIcon as={motion.a} whileHover={{scale: 1.2}} gap='1rem'>
             <FaGithubAlt />
+            </MenuIcon>
+            <MenuIcon as={motion.a} whileHover={{scale: 1.2}} gap='1rem'>
             <PiFlyingSaucer />
+            </MenuIcon>
           </IconContainer>
       </motion.div>
 

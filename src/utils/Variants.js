@@ -72,7 +72,7 @@ export const fadeInTopVariant = {
 
     transition: {
       type: 'tween',
-      duration: 2,
+      duration: 1,
 
     }
   }
