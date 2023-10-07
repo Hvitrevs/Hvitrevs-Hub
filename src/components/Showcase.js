@@ -7,6 +7,7 @@ import { ShowcaseImageCard, ShowcaseParticleContainer } from '../styles/Showcase
 import ShowcaseImg from '../assets/abstract1.png';
 import { motion } from 'framer-motion';
 import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
+import { Link } from 'react-router-dom';
 
 
 
@@ -42,15 +43,30 @@ const Showcase = () => {
           Currently I am working on designing and creating different user-friendly websites and applications. 
           </ParaText>
           <Flexcontainer top='1rem' bottom='1rem' gap='1.5rem' responsiveFlex>
-            <IconContainer as={motion.a} whileHover={{scale: 1.2}} color='white' size='1.5rem'>
-              <FaGithubAlt />
-            </IconContainer>
-            <IconContainer as={motion.a} whileHover={{scale: 1.2}} color='le' size='1.5rem'>
+
+
+           <Link to='https://github.com/Hvitrevs'>
+              <IconContainer as={motion.a} whileHover={{scale: 1.2}} color='white' size='1.5rem'>
+                
+                  <FaGithubAlt />
+              </IconContainer>
+            </Link>
+
+            
+              <Link to='https://codepen.io/Hvitrevs'>
+              <IconContainer as={motion.a} whileHover={{scale: 1.2}} color='le' size='1.5rem'>
               <FaCodepen />
-            </IconContainer>
-            <IconContainer as={motion.a} whileHover={{scale: 1.2}} color='white' size='1.5rem'>
-              <CiLinkedin />
-            </IconContainer>
+              </IconContainer>
+              </Link>
+             
+              
+
+            <Link to='https://www.linkedin.com/in/adelina-margulis-36b6aa272'>
+              <IconContainer as={motion.a} whileHover={{scale: 1.2}} color='white' size='1.5rem'>
+                <CiLinkedin />
+              </IconContainer>
+            </Link>
+
           </Flexcontainer>
           
         </motion.div>

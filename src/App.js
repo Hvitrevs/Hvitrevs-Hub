@@ -8,11 +8,13 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import TextSphereMobile from "./components/TextSphere/TextSphereMobile";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 
 
 function App() {
   return (
+    <Router>
     <ThemeProvider theme ={ theme }>
     <MainBody>
       <Container>
@@ -26,6 +28,7 @@ function App() {
     </MainBody> 
       
     </ThemeProvider>
+    </Router>
   );
 }
 
