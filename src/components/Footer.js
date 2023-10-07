@@ -1,7 +1,8 @@
 import React from 'react'
 import { Button, Flexcontainer, Heading, LeText, PaddingContainer } from '../styles/GlobalStyled'
 import { ContactForm, FormInput, FormLabel } from '../styles/Footer.styled'
-
+import { motion } from 'framer-motion'
+import { fadeInBottomVariant } from '../utils/Variants'
 
 // buiding contact form
 
@@ -12,7 +13,7 @@ const Footer = () => {
       top='12%'
       bottom='10%'
     >
-      <Heading as='h4' size='h1' align='center'>
+      <Heading as={motion.div} variants={fadeInBottomVariant} initial='hidden' whileInView='visible' size='h1' align='center'>
         Contact <LeText>me 📨 </LeText>     
       </Heading>
       {/* adding fields */}
