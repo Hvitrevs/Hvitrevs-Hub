@@ -3,14 +3,22 @@ import { Flexcontainer, Heading, IconContainer, PaddingContainer, ParaText } fro
 import { FaGithubAlt } from 'react-icons/fa6'
 import {  PiFlyingSaucer } from 'react-icons/pi'
 import { ProjectImage, ProjectImageContainer, TechStackCard } from '../../styles/Projects.styled'
+import { motion } from 'framer-motion'
+import { fadeInLeftVariant, fadeInRightVariant } from '../../utils/Variants'
 
 const Project = ({ data }) => {
   return (
-    <Flexcontainer fullWidthChild>
+    <Flexcontainer
+    direction={data.reverse ? 'row-reverse': false}
+    fullWidthChild>
 
 
       {/* left side of project section */}
-      <div>
+      <motion.div
+        variants={data.reverse ? fadeInRightVariant : fadeInLeftVariant}
+        initial='hidden'
+        whileInView='visible'
+      >
         <Flexcontainer  gap='1rem'>
           <Heading as='h3' size='h3' bottom='1rem'>
             {data.project_name}
@@ -31,12 +39,12 @@ const Project = ({ data }) => {
             <FaGithubAlt />
             <PiFlyingSaucer />
           </IconContainer>
-      </div>
+      </motion.div>
 
       
       {/* right side of project section */}
 
-      <ProjectImageContainer justify='flex-end'>
+      <ProjectImageContainer as={motion.div} justify={data.reverse ? 'flex-start': 'flex-end'} initial='hidden' whileInView='visible'>
         <ProjectImage src={data.project_img} />
 
 
