@@ -35,17 +35,16 @@ const Navbar = () => {
               Hvit<LeText>revs</LeText>
             </Logo>
             <NavLinksTop>
-            {navIcons.map((link) => (
-              <MenuItem
-                as={motion.a}
-                whileHover={{scale: 1.2}}
-                key={link.id}
-                href={`#${link.href}`} onClick={() => setOpenMenu(false)} color='orange'
-              > 
-                {link.name}
-              </MenuItem>
-          ))}
-              <GiVikingChurch />
+              {navIcons.map((link) => (
+                <MenuItem
+                  as={motion.a}
+                  whileHover={{scale: 1.2}}
+                  key={link.id}
+                  href={`#${link.href}`} onClick={() => setOpenMenu(false)} color='orange'
+                > 
+                  {link.name}
+                </MenuItem>
+              ))}
             </NavLinksTop>
 
             <MenuHidden as={motion.a} whileHover={{scale: 1.2}} size='2rem'

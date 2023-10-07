@@ -3,6 +3,12 @@ import { SiExpress, SiMongodb, } from 'react-icons/si';
 import Desktop2 from '../assets/desktop2.png';
 import Desktop from '../assets/desktop.png';
 import { GiVikingChurch } from 'react-icons/gi';
+import { TbTools } from 'react-icons/tb';
+import {  PiFlyingSaucer } from 'react-icons/pi';
+import {  SiMinutemailer } from 'react-icons/si';
+
+
+// import { GiVikingChurch } from 'react-icons/gi';
 
 export const Skills = [
   {
@@ -86,17 +92,17 @@ export const navIcons = [
   },
   {
     id: 1,
-    name: 'Skills',
+    name: <TbTools />,
     href: 'Skills'
   },
   {
     id: 2,
-    name: 'Apps',
+    name: <PiFlyingSaucer />,
     href: 'Projects'
   },
   {
     id: 3,
-    name: 'Contact',
+    name: <SiMinutemailer />,
     href: 'Contact'
   },
 

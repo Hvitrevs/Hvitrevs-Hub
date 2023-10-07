@@ -29,12 +29,28 @@ export const MenuIcon = styled.a`
 
 `
 
+export const NavLinksTop = styled.a`
+  color: ${({ theme }) => theme.colors.secondary};
+  font-size: ${({ size}) => size};
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    display: none;
+  }
+
+`
+
 export const MenuItem = styled.a`
   color: ${({ color }) => color};
-  font-size: 2rem;
-  margin-top: 3rem;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
   cursor: pointer;
   text-decoration: none;
+  
 `
 
 
@@ -63,16 +79,4 @@ export const MenuHidden = styled.a`
   }
 `
 
-export const NavLinksTop = styled.a`
-  color: ${({ theme }) => theme.colors.secondary};
-  font-size: ${({ size}) => size};
-  cursor: pointer;
-  transition: all 0.5s ease;
-  display: flex;
-  align-items: center;
 
-  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
-    display: none;
-  }
-
-`
