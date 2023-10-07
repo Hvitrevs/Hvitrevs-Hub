@@ -17,6 +17,8 @@ export const TechStackCard = styled.div`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
       margin-bottom: 1rem;
+      font-size: small;
+      padding: 0.3rem;
 
     }
 `

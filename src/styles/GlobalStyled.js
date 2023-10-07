@@ -131,6 +131,8 @@ export const Container = styled.div`
     line-height: 2rem;
     background-image:linear-gradient(to right,  hsla(206, 91.30%, 9.00%, 0.00), hsla(212, 67.40%, 16.90%, 0.11));
     border-radius: 15px;
+    gap: ${({ gap }) => gap};
+    
     
     
   `

@@ -45,11 +45,18 @@ export const NavLinksTop = styled.a`
 `
 
 export const MenuItem = styled.a`
-  color: ${({ color }) => color};
+  color: ${({ theme }) => theme.colors.secondary};
   font-size: 1.5rem;
-  margin-top: 0.5rem;
   cursor: pointer;
   text-decoration: none;
+  
+`
+export const MenuItemsText = styled.a`
+  color: ${({ theme }) => theme.colors.secondary};
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 3rem;
   
 `
 

@@ -26,7 +26,7 @@ const Project = ({ data }) => {
           </Heading>
         </Flexcontainer>
         <PaddingContainer top='1rem'>
-          <Flexcontainer gap='1.5rem'>
+          <Flexcontainer gap='1rem'>
             {data.tech_stack.map((stack) => (
               <TechStackCard> {stack}</TechStackCard>
             ))}

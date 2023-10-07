@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiOutlineClose } from 'react-icons/ai';
-import { MenuHidden, MenuIcon, MenuItem, NavMenuContainer } from '../../styles/Navbar.styled';
+import {  MenuIcon, MenuItem, MenuItemsText, NavMenuContainer } from '../../styles/Navbar.styled';
 import { Flexcontainer, PaddingContainer } from '../../styles/GlobalStyled';
 import { navLinks } from '../../utils/Data';
 import { motion } from 'framer-motion';
@@ -35,12 +35,12 @@ const NavMenu = ({ setOpenMenu }) => {
           responsiveFlex
         >
           {navLinks.map((link) => (
-              <MenuItem
+              <MenuItemsText
                 as={motion.a}
                 whileHover={{scale: 1.2}}
                 key={link.id}
-                href={`#${link.href}`} onClick={() => setOpenMenu(false)} color='orange'> {link.name}
-              </MenuItem>
+                href={`#${link.href}`} onClick={() => setOpenMenu(false)} > {link.name}
+              </MenuItemsText>
           ))}
         </Flexcontainer>
       </PaddingContainer>
