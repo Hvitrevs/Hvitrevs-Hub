@@ -22,6 +22,7 @@ const MySkills = () => {
 
 
         <SkillsCardContainer
+          
           as={motion.div}
           variants={fadeInLeftVariant}
           initial='hidden'

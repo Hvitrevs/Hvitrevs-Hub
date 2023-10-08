@@ -1,8 +1,8 @@
-import { FaReact, FaNode,} from 'react-icons/fa';
+import { FaReact, FaNode, FaDiscord,} from 'react-icons/fa';
 import { SiExpress, SiMongodb, } from 'react-icons/si';
 import Desktop2 from '../assets/desktop2.png';
 import Desktop from '../assets/desktop.png';
-import { GiVikingChurch } from 'react-icons/gi';
+import { GiSmartphone, GiVikingChurch } from 'react-icons/gi';
 import { TbTools } from 'react-icons/tb';
 import {  PiFlyingSaucer } from 'react-icons/pi';
 import {  SiMinutemailer } from 'react-icons/si';
@@ -109,3 +109,18 @@ export const navIcons = [
   },
 
 ]
+
+export const Contacts = [
+  {
+    id: 0,
+    tech: 'venusof12pm#1502',
+    icon: <FaDiscord/>,
+  },
+  {
+    id: 1,
+    tech: '+1 720 000 00 00',
+    icon: <GiSmartphone />,
+
+  },
+
+];

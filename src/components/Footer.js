@@ -1,8 +1,10 @@
 import React from 'react'
-import { Button, Flexcontainer, Heading, LeText, PaddingContainer } from '../styles/GlobalStyled'
+import { Button, Flexcontainer, Heading, IconContainer, LeText, PaddingContainer } from '../styles/GlobalStyled'
 import { ContactForm, FormInput, FormLabel } from '../styles/Footer.styled'
 import { motion } from 'framer-motion'
 import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
+import { ContactCard, ContactCardContainer, SkillCard, SkillsCardContainer } from '../styles/MySkills.styled'
+import { Contacts } from '../utils/Data'
 
 // buiding contact form
 
@@ -93,17 +95,23 @@ const Footer = () => {
       <PaddingContainer top='3rem' as={motion.div} variants={fadeInLeftVariant} initial='hidden' whileInView='visible'>
         <Flexcontainer gap='1rem' top='1rem' bottom='1rem'>
           <motion.div>
-            <Heading as={motion.h4}  variants={fadeInLeftVariant} initial='hidden' whileInView='visible'>
-              Discord
-            </Heading>
-          </motion.div>
-        </Flexcontainer>
-
-        <Flexcontainer gap='1rem' top='1rem' bottom='1rem'>
-          <motion.div>
-            <Heading as={motion.h4}  variants={fadeInLeftVariant} initial='hidden' whileInView='visible'>
-              Phone
-            </Heading>
+          <ContactCardContainer
+          as={motion.div}
+          variants={fadeInLeftVariant}
+          initial='hidden'
+          whileInView='visible'
+        >
+          {Contacts.map((skill) => (
+            <ContactCard>
+              <IconContainer size='6rem' color='le' >
+                {skill.icon}
+              </IconContainer>
+              <Heading as='h5' size='h5' top='3rem'>
+                {skill.tech}
+              </Heading>
+            </ContactCard>
+          ))}
+        </ContactCardContainer>
           </motion.div>
         </Flexcontainer>
 

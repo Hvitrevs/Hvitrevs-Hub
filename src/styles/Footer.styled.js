@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactForm = styled.form`
   padding-top: 2rem;
-  width: 40%;
+  width: 70%;
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
     width: 80%;
