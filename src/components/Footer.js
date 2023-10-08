@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Flexcontainer, Heading, LeText, PaddingContainer } from '../styles/GlobalStyled'
 import { ContactForm, FormInput, FormLabel } from '../styles/Footer.styled'
 import { motion } from 'framer-motion'
-import { fadeInBottomVariant } from '../utils/Variants'
+import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
 
 // buiding contact form
 
@@ -16,8 +16,13 @@ const Footer = () => {
       <Heading as={motion.div} variants={fadeInBottomVariant} initial='hidden' whileInView='visible' size='h1' align='center'>
         Contact <LeText>me 📨 </LeText>     
       </Heading>
-      {/* adding fields */}
-      <PaddingContainer top='3rem'>
+
+
+
+      {/* right side contact form */}
+
+
+      <PaddingContainer top='3rem' as={motion.div} variants={fadeInRightVariant} initial='hidden' whileInView='visible'>
         <Flexcontainer justify='center'>
           <ContactForm>
 
@@ -76,6 +81,13 @@ const Footer = () => {
             
           </ContactForm>
         </Flexcontainer>
+      </PaddingContainer>
+
+      {/* left side contact info boxes  */}
+
+      <PaddingContainer top='3rem' as={motion.div} variants={fadeInLeftVariant} initial='hidden' whileInView='visible'>
+
+
       </PaddingContainer>
 
     </PaddingContainer>

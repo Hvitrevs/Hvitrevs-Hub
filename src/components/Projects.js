@@ -41,7 +41,9 @@ const Projects = () => {
         variants={fadeInLeftVariantDelay}
         initial='hidden'
         whileInView='visible'
-        ><Button>➜</Button>
+        > 
+          <Heading as={motion.h4} variants={fadeInTopVariant}initial='hidden' whileInView='visible'  size='h4' top='1rem' bottom='2rem'>See more</Heading>
+          <Button>➜</Button>
       </motion.div>
     </PaddingContainer>
   ) 

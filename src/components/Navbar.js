@@ -5,7 +5,6 @@ import { theme } from '../utils/Theme'
 import { Logo, MenuHidden,  MenuItem,  NavLinksTop,  NavbarContainer } from '../styles/Navbar.styled'
 import NavMenu from './layouts/NavMenu'
 import { AnimatePresence , motion } from 'framer-motion'
-import { GiVikingChurch } from 'react-icons/gi'
 import { navIcons } from '../utils/Data'
 
 

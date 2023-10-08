@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiOutlineClose } from 'react-icons/ai';
-import {  MenuIcon, MenuItem, MenuItemsText, NavMenuContainer } from '../../styles/Navbar.styled';
+import {  MenuIcon,  MenuItemsText, NavMenuContainer } from '../../styles/Navbar.styled';
 import { Flexcontainer, PaddingContainer } from '../../styles/GlobalStyled';
 import { navLinks } from '../../utils/Data';
 import { motion } from 'framer-motion';
