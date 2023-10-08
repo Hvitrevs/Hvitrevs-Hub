@@ -17,6 +17,9 @@ const Projects = () => {
       responsiveLeft='1.5rem'
       respoinsiveRight='1rem'
       >
+
+        {/* main header */}
+
       <Heading size='h4'as={motion.h4} variants={fadeInTopVariant} initial='hidden' whileInView='visible'>
         See what
       </Heading>
@@ -24,6 +27,7 @@ const Projects = () => {
         Apps <LeText>I've built🛸 </LeText> 
       </Heading>
 
+      {/* container behavior */}
       
       {projectDetails.map((project) =>(
         <motion.div
@@ -36,6 +40,9 @@ const Projects = () => {
         </PaddingContainer>
         </motion.div>
       ))}
+
+
+      {/* button  */}
 
       <motion.div
         variants={fadeInLeftVariantDelay}

@@ -37,6 +37,8 @@ const Project = ({ data }) => {
         <ParaText top='1rem' bottom='1rem'>
           {data.project_desc}
         </ParaText>
+
+        {/* icons */}
         <IconContainer  color='le' size='1.5rem' top='1rem'  bottom='0.5rem'>
 
           <Link to={data.project_page}>

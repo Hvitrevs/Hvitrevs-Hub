@@ -8,14 +8,19 @@ import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant } from '../u
 
 const Footer = () => {
   return (
-    <PaddingContainer
+    <PaddingContainer 
       id='Contact'
-      top='12%'
+      top=' 10%'
       bottom='10%'
+      responsiveLeft='1rem'
+      responsiveRight='1rem'
     >
       <Heading as={motion.div} variants={fadeInBottomVariant} initial='hidden' whileInView='visible' size='h1' align='center'>
         Contact <LeText>me 📨 </LeText>     
       </Heading>
+      <Flexcontainer responsiveFlex responsiveDirection='column-reverse' fullWidthChild>
+      {/* General header */}
+
 
 
 
@@ -86,9 +91,25 @@ const Footer = () => {
       {/* left side contact info boxes  */}
 
       <PaddingContainer top='3rem' as={motion.div} variants={fadeInLeftVariant} initial='hidden' whileInView='visible'>
+        <Flexcontainer gap='1rem' top='1rem' bottom='1rem'>
+          <motion.div>
+            <Heading as={motion.h4}  variants={fadeInLeftVariant} initial='hidden' whileInView='visible'>
+              Discord
+            </Heading>
+          </motion.div>
+        </Flexcontainer>
+
+        <Flexcontainer gap='1rem' top='1rem' bottom='1rem'>
+          <motion.div>
+            <Heading as={motion.h4}  variants={fadeInLeftVariant} initial='hidden' whileInView='visible'>
+              Phone
+            </Heading>
+          </motion.div>
+        </Flexcontainer>
 
 
       </PaddingContainer>
+      </Flexcontainer>
 
     </PaddingContainer>
   )

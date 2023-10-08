@@ -30,9 +30,15 @@ const Navbar = () => {
         <Container>
           <Flexcontainer justify='space-between' responsiveFlex>
 
+
+            {/* site logo */}
+
             <Logo>
               Hvit<LeText>revs</LeText>
             </Logo>
+
+            {/* site icon links */}
+
             <NavLinksTop>
               {navIcons.map((link) => (
                 <MenuItem
@@ -45,6 +51,8 @@ const Navbar = () => {
                 </MenuItem>
               ))}
             </NavLinksTop>
+
+            {/* corner icon for mobile view */}
 
             <MenuHidden as={motion.a} whileHover={{scale: 1.2}} size='2rem'
             onClick={() => { setOpenMenu(true) }}>
