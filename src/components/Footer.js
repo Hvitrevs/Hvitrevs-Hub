@@ -2,8 +2,8 @@ import React from 'react'
 import { Button, Flexcontainer, Heading, IconContainer, LeText, PaddingContainer } from '../styles/GlobalStyled'
 import { ContactForm, FormInput, FormLabel } from '../styles/Footer.styled'
 import { motion } from 'framer-motion'
-import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
-import { ContactCard, ContactCardContainer, SkillCard, SkillsCardContainer } from '../styles/MySkills.styled'
+import { fadeInBottomVariant, fadeInLeftVariant, fadeInLeftVariantDelay, fadeInRightVariant } from '../utils/Variants'
+import { ContactCard, ContactCardContainer } from '../styles/MySkills.styled'
 import { Contacts } from '../utils/Data'
 
 // buiding contact form
@@ -97,7 +97,7 @@ const Footer = () => {
           <motion.div>
           <ContactCardContainer
           as={motion.div}
-          variants={fadeInLeftVariant}
+          variants={fadeInLeftVariantDelay}
           initial='hidden'
           whileInView='visible'
         >

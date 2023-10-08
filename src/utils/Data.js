@@ -2,9 +2,9 @@ import { FaReact, FaNode, FaDiscord,} from 'react-icons/fa';
 import { SiExpress, SiMongodb, } from 'react-icons/si';
 import Desktop2 from '../assets/desktop2.png';
 import Desktop from '../assets/desktop.png';
-import { GiSmartphone, GiVikingChurch } from 'react-icons/gi';
+import { GiSmartphone } from 'react-icons/gi';
 import { TbTools } from 'react-icons/tb';
-import {  PiFlyingSaucer } from 'react-icons/pi';
+import {  PiArrowFatUpThin, PiFlyingSaucer } from 'react-icons/pi';
 import {  SiMinutemailer } from 'react-icons/si';
 
 
@@ -89,7 +89,7 @@ export const navLinks = [
 export const navIcons = [
   {
     id: 0,
-    name: <GiVikingChurch />,
+    name: <PiArrowFatUpThin />,
     href: 'Home'
   },
   {

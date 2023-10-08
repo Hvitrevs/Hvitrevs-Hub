@@ -27,7 +27,7 @@ export const fadeInLeftVariantDelay = {
     transition: {
       type: 'tween',
       duration: 2,
-      delay: 1,
+      delay: 0.5,
       
     }
   }
