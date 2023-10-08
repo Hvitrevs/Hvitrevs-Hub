@@ -13,9 +13,10 @@ const Projects = () => {
       bottom="5%"
       left= '3%'
       right= '5%'
-      responsiveTop='20%'
+      responsiveTop='2rem'
       responsiveLeft='1.5rem'
       respoinsiveRight='1rem'
+      responsiveBottom='4rem'
       >
 
         {/* main header */}
@@ -35,7 +36,7 @@ const Projects = () => {
         initial='hidden'
         whileInView='visible'
         >
-        <PaddingContainer  key={project.id} top='3rem' bottom='3rem'>
+        <PaddingContainer  key={project.id} top='3rem' bottom='2rem'>
           <Project  data={project} />
         </PaddingContainer>
         </motion.div>
