@@ -2,10 +2,13 @@ import React from 'react';
 import { Button, Heading, LeText, PaddingContainer } from '../styles/GlobalStyled';
 import { projectDetails } from '../utils/Data';
 import Project from './layouts/Project';
-import { motion } from "framer-motion";
+import {  motion } from "framer-motion";
 import {  fadeInLeftVariantDelay, fadeInTopVariant } from '../utils/Variants';
+import Apps from './layouts/Apps';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
+
   return (
     <PaddingContainer
       id="Projects"
@@ -49,9 +52,13 @@ const Projects = () => {
         variants={fadeInLeftVariantDelay}
         initial='hidden'
         whileInView='visible'
-        > 
+        > <Link  to='/more-apps'style={{ textDecoration: 'none' }}>
           <Heading as={motion.h4} variants={fadeInTopVariant}initial='hidden' whileInView='visible'  size='h4' top='1rem' bottom='2rem'>See more</Heading>
-          <Button>➜</Button>
+
+          
+              <Button>➜</Button> 
+          </Link>
+
       </motion.div>
     </PaddingContainer>
   ) 

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {  GiFoxHead } from 'react-icons/gi'
 import { Container, Flexcontainer, LeText, PaddingContainer } from '../styles/GlobalStyled'
-import { theme } from '../utils/Theme'
 import { Logo, MenuHidden,  MenuItem,  NavLinksTop,  NavbarContainer } from '../styles/Navbar.styled'
 import NavMenu from './layouts/NavMenu'
 import { AnimatePresence , motion } from 'framer-motion'
@@ -25,7 +24,7 @@ const Navbar = () => {
   }, []);
   return (
     <NavbarContainer 
-      bgColor={ sticky ? theme.colors.primary : 'transparent' }>
+      bgColor='transparent'>
       <PaddingContainer top='1rem' bottom='1rem' responsiveRight='1rem'>
         <Container>
           <Flexcontainer justify='space-between' responsiveFlex>

@@ -25,6 +25,17 @@ export const MenuIcon = styled.a`
   transition: all 0.5s ease;
   display: flex;
   align-items: center;
+  padding-top: ${({ top }) => top};
+  padding-bottom: ${({ bottom }) => bottom};
+  padding-left: ${({ left }) => left};
+  padding-right: ${({ right }) => right};
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
+    padding-top: ${({ responsiveTop }) => responsiveTop};
+    padding-bottom: ${({ responsiveBottom }) => responsiveBottom};
+    padding-left: ${({ responsiveLeft }) => responsiveLeft};
+    padding-right: ${({ responsiveRight }) => responsiveRight};
+  }
+
 
 
 `

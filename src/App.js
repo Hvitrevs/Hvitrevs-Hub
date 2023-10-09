@@ -8,15 +8,22 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import TextSphereMobile from "./components/TextSphere/TextSphereMobile";
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter, Route,  Routes} from 'react-router-dom';
+import Apps from "./components/layouts/Apps";
 
 
 
 function App() {
+
+  
   return (
-    <Router>
+    <BrowserRouter>
     <ThemeProvider theme ={ theme }>
     <MainBody>
+    <Routes>
+      <Route path='/app' element={ <MainBody / >} />
+      <Route path='/more-apps' element={<Apps />} />
+     </Routes>
       <Container>
         <Navbar />
         <Showcase />
@@ -26,9 +33,10 @@ function App() {
         <Footer />
       </Container>
     </MainBody> 
-      
     </ThemeProvider>
-    </Router>
+    </BrowserRouter>
+    
+
   );
 }
 

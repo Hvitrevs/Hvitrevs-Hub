@@ -26,8 +26,6 @@ export const ProjectImageContainer = styled.div`
   display: flex;
   justify-content: ${({ justify }) => justify};
   
-  
-  
 `
 export const ProjectImage = styled.img`
   border: 1px solid transparent;
@@ -42,8 +40,15 @@ export const ProjectImage = styled.img`
     width: 110%;
     margin-top: 2rem;
   }
+`
 
-
-
+export const  AppContainer = styled.div`
+position: fixed;
+top: 0;
+left: 0;
+height: 100vh;
+width: 100%;
+background-image:linear-gradient(to bottom,  hsla(222, 100.00%, 10.40%), hsla(236, 100.00%, 5.30%, 0.69));
+z-index: 1;
 
 `
