@@ -16,8 +16,8 @@ const Apps = ( ) => {
     <AppContainer>
       <PaddingContainer  
         bottom="5%"
-        left= '3%'
-        right= '5%'
+        left= '5%'
+        right= '13%'
         responsiveTop='2rem'
         responsiveLeft='1.5rem'
         respoinsiveRight='1rem'
@@ -25,7 +25,7 @@ const Apps = ( ) => {
         >
         <Flexcontainer justify='flex-end' responsiveFlex>
           <Link to='/app'>
-          <MenuIcon  size='2rem' top='3rem' 
+          <MenuIcon  size='2rem' top='4rem' 
           >
             <AiOutlineClose />
           </MenuIcon>
@@ -58,7 +58,7 @@ const Apps = ( ) => {
         <PaddingContainer>
           <Flexcontainer>
             <Heading>
-              
+
             </Heading>
           </Flexcontainer>
         </PaddingContainer>
