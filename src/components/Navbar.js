@@ -44,7 +44,7 @@ const Navbar = () => {
                   as={motion.a}
                   whileHover={{scale: 1.2}}
                   key={link.id}
-                  href={`#${link.href}`} onClick={() => setOpenMenu(false)} color='orange'
+                  href={`/app#${link.href}`} onClick={() => setOpenMenu(false)} color='orange'
                 > 
                   {link.name}
                 </MenuItem>
