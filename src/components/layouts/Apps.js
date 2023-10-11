@@ -1,11 +1,12 @@
 import React from 'react'
 import { Flexcontainer, Heading, LeText, PaddingContainer } from '../../styles/GlobalStyled'
 import { motion } from 'framer-motion'
-import { fadeInTopVariant } from '../../utils/Variants'
+import { fadeInLeftVariantDelay, fadeInTopVariant } from '../../utils/Variants'
 import { MenuIcon } from '../../styles/Navbar.styled'
 import { AiOutlineClose } from 'react-icons/ai'
 import { AppContainer } from '../../styles/Projects.styled'
 import { Link } from 'react-router-dom'
+
 
 
 const Apps = ( ) => {
@@ -13,7 +14,15 @@ const Apps = ( ) => {
   return (
 
     <AppContainer>
-      <PaddingContainer  left='5%' right='5%' top='2rem'>
+      <PaddingContainer  
+        bottom="5%"
+        left= '3%'
+        right= '5%'
+        responsiveTop='2rem'
+        responsiveLeft='1.5rem'
+        respoinsiveRight='1rem'
+        responsiveBottom='4rem'
+        >
         <Flexcontainer justify='flex-end' responsiveFlex>
           <Link to='/app'>
           <MenuIcon  size='2rem' top='3rem' 
@@ -40,8 +49,24 @@ const Apps = ( ) => {
             </Flexcontainer>
             
       </PaddingContainer>
+      
+      <motion.div
+        variants={fadeInLeftVariantDelay}
+        initial='hidden'
+        whileInView='visible'
+      >
+        <PaddingContainer>
+          <Flexcontainer>
+            <Heading>
+              
+            </Heading>
+          </Flexcontainer>
+        </PaddingContainer>
+
+      </motion.div>
+
     </AppContainer>
-  )
+  );
 }
 
 export default Apps
