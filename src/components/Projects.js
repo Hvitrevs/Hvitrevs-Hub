@@ -4,7 +4,6 @@ import { projectDetails } from '../utils/Data';
 import Project from './layouts/Project';
 import {  motion } from "framer-motion";
 import {  fadeInLeftVariantDelay, fadeInTopVariant } from '../utils/Variants';
-import Apps from './layouts/Apps';
 import { Link } from 'react-router-dom';
 
 const Projects = () => {

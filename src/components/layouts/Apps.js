@@ -7,8 +7,11 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { AppContainer } from '../../styles/Projects.styled'
 import { Link } from 'react-router-dom'
 
+
 const Apps = ( ) => {
+
   return (
+
     <AppContainer>
       <PaddingContainer  left='5%' right='5%' top='2rem'>
         <Flexcontainer justify='flex-end' responsiveFlex>
