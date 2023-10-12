@@ -6,6 +6,8 @@ import { MenuIcon } from '../../styles/Navbar.styled'
 import { AiOutlineClose } from 'react-icons/ai'
 import { AppContainer, TechStackCard } from '../../styles/Projects.styled'
 import { Link } from 'react-router-dom'
+import { appsDetails } from '../../utils/Data'
+import AppsLayout from './AppsLayout'
 
 
 
@@ -57,18 +59,17 @@ const Apps = ( data ) => {
       >
         <PaddingContainer>
           <Flexcontainer>
-            <Heading>
-              Title
-
-            </Heading>
-            <PaddingContainer top='1rem'>
-          <Flexcontainer gap='1rem'>
-            {data.tech_stack.map((stack) => (
-              <TechStackCard> {stack}</TechStackCard>
-            ))}
-            
-          </Flexcontainer>
+          {appsDetails.map((project) =>(
+        <motion.div
+        variants={fadeInLeftVariantDelay}
+        initial='hidden'
+        whileInView='visible'
+        >
+        <PaddingContainer  key={project.id} top='3rem' bottom='2rem'>
+          <AppsLayout  data={project} />
         </PaddingContainer>
+        </motion.div>
+      ))}
           </Flexcontainer>
         </PaddingContainer>
 
