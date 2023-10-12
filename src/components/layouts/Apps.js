@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { fadeInLeftVariantDelay, fadeInTopVariant } from '../../utils/Variants'
 import { MenuIcon } from '../../styles/Navbar.styled'
 import { AiOutlineClose } from 'react-icons/ai'
-import { AppContainer, TechStackCard } from '../../styles/Projects.styled'
+import { AppContainer } from '../../styles/Projects.styled'
 import { Link } from 'react-router-dom'
 import { appsDetails } from '../../utils/Data'
 import AppsLayout from './AppsLayout'
@@ -33,22 +33,23 @@ const Apps = ( data ) => {
           </MenuIcon>
           </Link>
         </Flexcontainer>
-        
       </PaddingContainer>
+
+
       <PaddingContainer top='1rem'>
         <Flexcontainer
               direction='column'
               align='center'
               responsiveFlex
-            >
-              <Heading size='h4'as={motion.h4} variants={fadeInTopVariant} initial='hidden' whileInView='visible'>
-                See what
-              </Heading>
-              <Heading as={motion.h1} variants={fadeInTopVariant} initial='hidden' whileInView='visible'  size='h1' top='1rem' bottom='1rem'>
-              Apps <LeText>I've built🛸 </LeText> 
-              </Heading>
+        >
+          <Heading size='h4'as={motion.h4} variants={fadeInTopVariant} initial='hidden' whileInView='visible'>
+            See what
+          </Heading>
+          <Heading as={motion.h1} variants={fadeInTopVariant} initial='hidden' whileInView='visible'  size='h1' top='1rem' bottom='1rem'>
+            Apps <LeText>I've built🛸 </LeText> 
+          </Heading>
 
-            </Flexcontainer>
+        </Flexcontainer>
             
       </PaddingContainer>
       

@@ -51,7 +51,7 @@ const AppsLayout = ({ data }) => {
                 <MenuIcon as={motion.a} whileHover={{scale: 1.2}} gap='1rem'>
                   <PiFlyingSaucer />
                 </MenuIcon>
-              </Link>
+          </Link>
         </IconContainer>
       </motion.div>
 
