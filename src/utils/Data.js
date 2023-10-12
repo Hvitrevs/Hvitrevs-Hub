@@ -124,3 +124,27 @@ export const Contacts = [
   },
 
 ];
+
+export const appsDetails = [
+  {
+    id: 0,
+    project_name: 'Weather Desktop Application',
+    project_desc: 'This is a weather API utilizer that transforms API data from open-metio.com into readable responsive webpage.',
+    tech_stack: ['Vite', 'JavaScript', 'Tailwind' ],
+    project_img: Desktop2,
+    project_url: 'https://magical-concha-6ccb16.netlify.app',
+    project_page:'https://github.com/Hvitrevs/Weather-app-',
+    reverse: false,
+  },
+  {
+    id: 1,
+    project_name: 'Admin Dashboard Application',
+    project_desc: 'Front-End sales dashboart utilizing recharts into responsive webpage. No server side, demo version only.',
+    tech_stack: ['Vite', 'TypeScript', 'SASS', 'React' ],
+    project_img: Desktop,
+    project_url: 'https://incandescent-vacherin-43b64e.netlify.app',
+    project_page:'https://github.com/Hvitrevs/Sales-dashboard',
+    reverse: false,
+  },
+
+]

@@ -4,12 +4,12 @@ import { motion } from 'framer-motion'
 import { fadeInLeftVariantDelay, fadeInTopVariant } from '../../utils/Variants'
 import { MenuIcon } from '../../styles/Navbar.styled'
 import { AiOutlineClose } from 'react-icons/ai'
-import { AppContainer } from '../../styles/Projects.styled'
+import { AppContainer, TechStackCard } from '../../styles/Projects.styled'
 import { Link } from 'react-router-dom'
 
 
 
-const Apps = ( ) => {
+const Apps = ( data ) => {
 
   return (
 
@@ -58,8 +58,17 @@ const Apps = ( ) => {
         <PaddingContainer>
           <Flexcontainer>
             <Heading>
+              Title
 
             </Heading>
+            <PaddingContainer top='1rem'>
+          <Flexcontainer gap='1rem'>
+            {data.tech_stack.map((stack) => (
+              <TechStackCard> {stack}</TechStackCard>
+            ))}
+            
+          </Flexcontainer>
+        </PaddingContainer>
           </Flexcontainer>
         </PaddingContainer>
 
