@@ -53,7 +53,7 @@ const Showcase = () => {
             </Link>
 
             
-              <Link to='https://codepen.io/Hvitrevs'>
+              <Link to='https://codepen.io/your-work/'>
               <IconContainer as={motion.a} whileHover={{scale: 1.2}} color='le' size='1.5rem'>
               <FaCodepen />
               </IconContainer>

@@ -66,9 +66,9 @@ const Apps = ( data ) => {
         initial='hidden'
         whileInView='visible'
         >
-        <PaddingContainer  key={project.id} top='3rem' bottom='2rem'>
-          <AppsLayout  data={project} />
-        </PaddingContainer>
+          <PaddingContainer  key={project.id} top='3rem' bottom='2rem'>
+            <AppsLayout  data={project} />
+          </PaddingContainer>
         </motion.div>
       ))}
           </Flexcontainer>
