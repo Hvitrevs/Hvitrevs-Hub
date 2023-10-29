@@ -1,7 +1,6 @@
 import React from 'react';
 import { PaddingContainer, Flexcontainer, Heading, ParaText, LeText, IconContainer } from '../styles/GlobalStyled';
 import { FaGithubAlt, FaCodepen,  } from 'react-icons/fa6'
-import { CiLinkedin  } from 'react-icons/ci'
 import "../index.css"
 import { ShowcaseImageCard, ShowcaseParticleContainer } from '../styles/Showcase.styled';
 import ShowcaseImg from '../assets/abstract1.png';
@@ -45,30 +44,20 @@ const Showcase = () => {
           <Flexcontainer top='1rem' bottom='1rem' gap='1.5rem' responsiveFlex>
 
 
-           <Link to='https://github.com/Hvitrevs'>
+            <Link to='https://github.com/Hvitrevs'>
               <IconContainer as={motion.a} whileHover={{scale: 1.2}} color='white' size='1.5rem'>
                 
                   <FaGithubAlt />
               </IconContainer>
             </Link>
-
             
               <Link to='https://codepen.io/your-work/'>
               <IconContainer as={motion.a} whileHover={{scale: 1.2}} color='le' size='1.5rem'>
               <FaCodepen />
               </IconContainer>
               </Link>
-             
-              
-
-            <Link to='https://www.linkedin.com/in/adelina-margulis-36b6aa272'>
-              <IconContainer as={motion.a} whileHover={{scale: 1.2}} color='white' size='1.5rem'>
-                <CiLinkedin />
-              </IconContainer>
-            </Link>
 
           </Flexcontainer>
-          
         </motion.div>
         {/* right container */}
         <Flexcontainer 
