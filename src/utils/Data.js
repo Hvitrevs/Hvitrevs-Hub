@@ -125,6 +125,9 @@ export const Contacts = [
 
 ];
 
+
+//bellow is datastack for hub's list of projects
+
 export const appsDetails = [
   {
     id: 0,
@@ -146,5 +149,26 @@ export const appsDetails = [
     app_page:'https://github.com/Hvitrevs/Sales-dashboard',
     reverse: false,
   },
+  {
+    id: 3,
+    app_name: 'Weather Desktop Application',
+    app_desc: 'This is a weather API utilizer that transforms API data from open-metio.com into readable responsive webpage.',
+    tech_stack: ['Vite', 'JavaScript', 'Tailwind' ],
+    app_img: Desktop2,
+    app_url: 'https://magical-concha-6ccb16.netlify.app',
+    app_page:'https://github.com/Hvitrevs/Weather-app-',
+    reverse: false,
+  },
+  {
+    id: 4,
+    app_name: 'Admin Dashboard Application',
+    app_desc: 'Front-End sales dashboart utilizing recharts into responsive webpage. No server side, demo version only.',
+    tech_stack: ['Vite', 'TypeScript', 'SASS', 'React' ],
+    app_img: Desktop,
+    app_url: 'https://incandescent-vacherin-43b64e.netlify.app',
+    app_page:'https://github.com/Hvitrevs/Sales-dashboard',
+    reverse: false,
+  },
+
 
 ]
