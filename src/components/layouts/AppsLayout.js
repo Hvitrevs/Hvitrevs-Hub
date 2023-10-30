@@ -35,19 +35,19 @@ const AppsLayout = ({ data }) => {
           </Flexcontainer>
         </PaddingContainer>
         <ParaText top='1rem' bottom='1rem'>
-          {data.project_desc}
+          {data.app_desc}
         </ParaText>
 
         {/* icons */}
         <IconContainer  color='le' size='1.5rem' top='1rem'  bottom='0.5rem'>
 
-          <Link to={data.project_page}>
+          <Link to={data.app_page}>
 
               <MenuIcon as={motion.a} whileHover={{scale: 1.2}} gap='1rem'>
                 <FaGithubAlt />
               </MenuIcon>
           </Link>
-          <Link to={data.project_url}>
+          <Link to={data.app_url}>
                 <MenuIcon as={motion.a} whileHover={{scale: 1.2}} gap='1rem'>
                   <PiFlyingSaucer />
                 </MenuIcon>
@@ -56,10 +56,10 @@ const AppsLayout = ({ data }) => {
       </motion.div>
 
       
-      {/* right side of project section */}
+      {/* right side of app section */}
 
       <ProjectImageContainer as={motion.div} justify={data.reverse ? 'flex-start': 'flex-end'} initial='hidden' whileInView='visible'>
-        <ProjectImage src={data.project_img} />
+        <ProjectImage src={data.app_img} />
 
 
       </ProjectImageContainer>

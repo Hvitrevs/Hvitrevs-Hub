@@ -11,7 +11,7 @@ import AppsLayout from './AppsLayout'
 
 
 
-const Apps = ( data ) => {
+const Apps = (  ) => {
 
   return (
 
@@ -33,15 +33,15 @@ const Apps = ( data ) => {
           </MenuIcon>
           </Link>
         </Flexcontainer>
-      </PaddingContainer>
+        </PaddingContainer>
 
 
-      <PaddingContainer top='1rem'>
-        <Flexcontainer
+        <PaddingContainer top='1rem'>
+          <Flexcontainer
               direction='column'
               align='center'
               responsiveFlex
-        >
+          >
           <Heading size='h4'as={motion.h4} variants={fadeInTopVariant} initial='hidden' whileInView='visible'>
             See what
           </Heading>
