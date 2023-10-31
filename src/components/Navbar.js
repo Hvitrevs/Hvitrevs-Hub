@@ -9,6 +9,7 @@ import { navIcons } from '../utils/Data'
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
     const onScroll = () => {
