@@ -45,7 +45,10 @@ export const ProjectImage = styled.img`
 export const  AppContainer = styled.div`
 position: fixed;
 display: inline-block;
+opacity: 100%;
+align-items: center;
 top: 0;
+overflow: auto; 
 left: 0;
 height: 100%;
 width: 100%;

@@ -30,6 +30,7 @@ export const Container = styled.div`
   `
 
   export const Flexcontainer = styled.div`
+    position: ${({ position }) => position};
     padding-top: ${({ top }) => top};
     padding-bottom: ${({ bottom }) => bottom};  
     display: flex;

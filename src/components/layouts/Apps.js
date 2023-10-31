@@ -72,6 +72,7 @@ const Apps = (  ) => {
           </motion.div>
         ))}
           </Flexcontainer>
+          
       </PaddingContainer>
 
     </motion.div>
