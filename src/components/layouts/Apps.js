@@ -51,30 +51,30 @@ const Apps = (  ) => {
 
         </Flexcontainer>
             
-      </PaddingContainer>
-      
-      <motion.div 
-        variants={fadeInLeftVariantDelay}
-        initial='hidden'
-        whileInView='visible'
-      >
-        <PaddingContainer top='1rem' left='3rem'>
-        <Flexcontainer direction='column' align='center'>
-          {appsDetails.map((project) =>(
-        <motion.div 
-        variants={fadeInLeftVariantDelay}
-        initial='hidden'
-        whileInView='visible'
-        >
-          <PaddingContainer  key={project.id} top='3rem' bottom='2rem' >
-            <AppsLayout  data={project} />
-          </PaddingContainer>
-        </motion.div>
-      ))}
-        </Flexcontainer>
         </PaddingContainer>
+        
+        <motion.div 
+          variants={fadeInLeftVariantDelay}
+          initial='hidden'
+          whileInView='visible'
+        >
+          <PaddingContainer top='1rem' left='3rem'>
+          <Flexcontainer direction='column' align='center'>
+            {appsDetails.map((project) =>(
+          <motion.div 
+          variants={fadeInLeftVariantDelay}
+          initial='hidden'
+          whileInView='visible'
+          >
+            <PaddingContainer  key={project.id} top='3rem' bottom='2rem' >
+              <AppsLayout  data={project} />
+            </PaddingContainer>
+          </motion.div>
+        ))}
+          </Flexcontainer>
+      </PaddingContainer>
 
-      </motion.div>
+    </motion.div>
 
     </AppContainer>
   );

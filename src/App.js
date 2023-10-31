@@ -20,10 +20,10 @@ function App() {
     <BrowserRouter>
     <ThemeProvider theme ={ theme }>
     <MainBody>
-    <Routes>
+      <Routes>
       <Route path='/app' element={ <MainBody / >} />
       <Route path='/more-apps' element={<Apps />} />
-     </Routes>
+      </Routes>
       <Container>
         <Navbar />
         <Showcase />

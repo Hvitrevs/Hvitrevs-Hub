@@ -49,7 +49,7 @@ top: 0;
 left: 0;
 height: 100%;
 width: 100%;
-background-image:linear-gradient(to bottom,  hsla(222, 100.00%, 10.40%), hsla(236, 100.00%, 5.30%, 1));
-z-index: 2;
+background-image:linear-gradient(to bottom,  hsla(222, 100.00%, 10.40%), hsla(236, 100.00%, 5.30%, 100));
+z-index: 3;
 
 `

@@ -23,12 +23,12 @@ const AppsLayout = ({ data }) => {
       >
         <Flexcontainer  gap='1rem'>
           <Heading as='h3' size='h3' bottom='1rem'>
-            {data.project_name}
+            {data.app_name}
           </Heading>
         </Flexcontainer>
         <PaddingContainer top='1rem'>
           <Flexcontainer gap='1rem'>
-            {data.tech_stack.map((stack) => (
+            {data.app_stack.map((stack) => (
               <TechStackCard> {stack}</TechStackCard>
             ))}
             
