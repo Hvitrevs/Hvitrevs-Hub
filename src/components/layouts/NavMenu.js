@@ -39,7 +39,7 @@ const NavMenu = ({ setOpenMenu }) => {
                 as={motion.a}
                 whileHover={{scale: 1.2}}
                 key={link.id}
-                href={`/app#${link.href}`} onClick={() => setOpenMenu(false)} > {link.name}
+                href={`#${link.href}`} onClick={() => setOpenMenu(false)} > {link.name}
               </MenuItemsText>
           ))}
         </Flexcontainer>
