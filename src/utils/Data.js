@@ -160,6 +160,4 @@ export const appsDetails = [
     reverse: false,
   },
 
-
-
 ]
