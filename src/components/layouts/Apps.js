@@ -17,26 +17,27 @@ const Apps = (  ) => {
 
     <AppContainer>
       <PaddingContainer  
-        bottom='5%'
-        left= '5%'
-        right= '13%'
-        responsiveTop='2rem'
-        responsiveLeft='1.5rem'
+        bottom='10%'
+        left= '18%'
+        right= '15%'
+        responsiveTop='0'
+        responsiveLeft='3rem'
         respoinsiveRight='1rem'
         responsiveBottom='4rem'
+        position='fixed'
         >
-        <Flexcontainer justify='flex-end' responsiveFlex>
-          <Link to='/app'>
-          <MenuIcon  size='2rem' top='4rem' 
+        <Flexcontainer justify='flex-end'  responsiveFlex>
+          <Link to='/app#Projects'>
+          <MenuIcon as={motion.a} whileHover={{scale: 1.2}} size='1.2rem' top='4rem'
           >
             <AiOutlineClose />
           </MenuIcon>
           </Link>
         </Flexcontainer>
-        </PaddingContainer>
+      </PaddingContainer>
 
 
-        <PaddingContainer top='1rem'>
+        <PaddingContainer top='10rem'>
           <Flexcontainer
               direction='column'
               align='center'
@@ -58,7 +59,11 @@ const Apps = (  ) => {
           initial='hidden'
           whileInView='visible'
         >
-          <PaddingContainer top='1rem' left='3rem'>
+          <PaddingContainer 
+          top='1rem' 
+          left='1rem' 
+          responsiveLeft='1rem'
+          respoinsiveRight='4rem'>
           <Flexcontainer direction='column' align='center'>
             {appsDetails.map((project) =>(
           <motion.div 
@@ -66,7 +71,7 @@ const Apps = (  ) => {
           initial='hidden'
           whileInView='visible'
           >
-            <PaddingContainer  key={project.id} top='3rem' bottom='2rem' >
+            <PaddingContainer responsiveLeft='2rem' respoinsiveRight='6rem' key={project.id} top='3rem' bottom='2rem' >
               <AppsLayout  data={project} />
             </PaddingContainer>
           </motion.div>

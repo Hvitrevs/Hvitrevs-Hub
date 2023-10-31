@@ -34,7 +34,7 @@ const AppsLayout = ({ data }) => {
             
           </Flexcontainer>
         </PaddingContainer>
-        <ParaText top='1rem' bottom='1rem' align='start'>
+        <ParaText top='1rem' bottom='1rem' align='start' right='1rem'>
           {data.app_desc}
         </ParaText>
 

@@ -7,8 +7,8 @@ export const MainBody = styled.div`
 
 export const Container = styled.div`
 
-  width: 85%;
-  max-width: 1280px;
+  width: 75%;
+  max-width: 1180px;
   margin: auto;
   letter-spacing: 0.17rem;
   
@@ -19,6 +19,9 @@ export const Container = styled.div`
     padding-bottom: ${({ bottom }) => bottom};
     padding-left: ${({ left }) => left};
     padding-right: ${({ right }) => right};
+    position: ${({ position }) => position};
+    background-image:${({ background }) => background};
+    border-radius: ${({ border }) => border};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
       padding-top: ${({ responsiveTop }) => responsiveTop};
@@ -133,6 +136,7 @@ export const Container = styled.div`
     background-image:linear-gradient(to right,  hsla(206, 91.30%, 9.00%, 0.00), hsla(212, 67.40%, 16.90%, 0.11));
     border-radius: 15px;
     gap: ${({ gap }) => gap};
+    
     
     
     

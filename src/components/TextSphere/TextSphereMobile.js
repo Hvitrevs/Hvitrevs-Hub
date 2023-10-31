@@ -143,7 +143,7 @@ const TextSphereMobile = () => {
   return (
     
     <>
-      <Heading align='center' as='h1' size='h3' top='1rem' bottom='0.3rem'>I use <LeText> and familiar with </LeText> </Heading>
+      <Heading className="title1" align='center' as='h1' size='h3' top='1rem' bottom='0.3rem'>I use <LeText> and familiar with </LeText> </Heading>
       <div className="text-shpere">
         {/* span tag className must be "tagcloud"  */}
         <span className="tagcloud"></span>
