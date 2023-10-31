@@ -99,7 +99,7 @@
     
 }
   .title1 {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 1980px) {
       display: none;
 
     }
