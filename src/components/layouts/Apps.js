@@ -27,7 +27,7 @@ const Apps = (  ) => {
         position='fixed'
         >
         <Flexcontainer justify='flex-end'  responsiveFlex>
-          <Link to='#Projects'>
+          <Link to='/app#Projects'>
           
           <MenuIcon as={motion.a} whileHover={{scale: 1.2}} size='1.2rem' top='4rem'
           >
