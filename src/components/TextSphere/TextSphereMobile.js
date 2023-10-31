@@ -11,8 +11,8 @@ const TextSphereMobile = () => {
   useEffect(() => {
     return () => {
       
-      const container = ".tagcloud";
-      const texts = [
+      const container2 = ".tagcloud2";
+      const texts2 = [
         "HTML",
         "CSS",
         "SASS",
@@ -43,8 +43,48 @@ const TextSphereMobile = () => {
         
       ];
 
-      const options = {
-        radius: 180,
+      const options2 = {
+        radius: 900,
+        maxSpeed: "normal",
+        initSpeed: "normal",
+        keep: false,
+
+        
+      };  
+    const container1 = ".tagcloud1";
+      const texts1 = [
+        "HTML",
+        "CSS",
+        "SASS",
+        "Windows OS",
+        "MongoDB",
+        "JavaScript",
+        "React",
+        "Vue",
+        "Tailwind",
+        "NodeJS",
+        "MySQL",
+        "Jquery",
+        "Vite",
+        "NodeJs",
+        "WordPress",
+        "GIT",
+        "GITHUB",
+        "Photoshop",
+        "Adobe XD",
+        "Figma",
+        "Typescript",
+        "Adobe I",
+        "Blender",
+        "Python",
+        "Express",
+        "Linux",
+        "🦊",
+        
+      ];
+
+      const options1 = {
+        radius: 780,
         maxSpeed: "normal",
         initSpeed: "normal",
         keep: false,
@@ -53,7 +93,49 @@ const TextSphereMobile = () => {
       };
 
 
-      TagCloud(container, texts, options);
+      const container0 = ".tagcloud";
+      const texts0 = [
+        "HTML",
+        "CSS",
+        "SASS",
+        "Windows OS",
+        "MongoDB",
+        "JavaScript",
+        "React",
+        "Vue",
+        "Tailwind",
+        "NodeJS",
+        "MySQL",
+        "Jquery",
+        "Vite",
+        "NodeJs",
+        "WordPress",
+        "GIT",
+        "GITHUB",
+        "Photoshop",
+        "Adobe XD",
+        "Figma",
+        "Typescript",
+        "Adobe I",
+        "Blender",
+        "Python",
+        "Express",
+        "Linux",
+        "🦊",
+        
+      ];
+
+      const options0 = {
+        radius: 253,
+        maxSpeed: "normal",
+        initSpeed: "normal",
+        keep: false,
+
+        
+      };
+
+
+      TagCloud(container0, texts0, options0, container1, options1, texts1,container2, texts2, options2 );
 
     };
   }, []);
