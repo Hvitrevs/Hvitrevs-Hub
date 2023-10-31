@@ -20,8 +20,7 @@ export const Container = styled.div`
     padding-left: ${({ left }) => left};
     padding-right: ${({ right }) => right};
     position: ${({ position }) => position};
-    background-image:${({ background }) => background};
-    border-radius: ${({ border }) => border};
+
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
       padding-top: ${({ responsiveTop }) => responsiveTop};

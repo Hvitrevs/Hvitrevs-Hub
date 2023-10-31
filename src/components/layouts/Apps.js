@@ -28,6 +28,7 @@ const Apps = (  ) => {
         >
         <Flexcontainer justify='flex-end'  responsiveFlex>
           <Link to='/app#Projects'>
+          
           <MenuIcon as={motion.a} whileHover={{scale: 1.2}} size='1.2rem' top='4rem'
           >
             <AiOutlineClose />

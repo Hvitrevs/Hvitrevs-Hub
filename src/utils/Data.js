@@ -159,16 +159,7 @@ export const appsDetails = [
     app_page:'https://github.com/Hvitrevs/Weather-app-',
     reverse: false,
   },
-  {
-    id: 4,
-    app_name: 'Admin Dashboard Application',
-    app_desc: 'Front-End sales dashboart utilizing recharts into responsive webpage. No server side, demo version only.',
-    app_stack: ['Vite', 'TypeScript', 'SASS', 'React' ],
-    app_img: Desktop,
-    app_url: 'https://incandescent-vacherin-43b64e.netlify.app',
-    app_page:'https://github.com/Hvitrevs/Sales-dashboard',
-    reverse: false,
-  },
+
 
 
 ]
