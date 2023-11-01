@@ -17,7 +17,10 @@ const Footer = () => {
       responsiveLeft='1rem'
       responsiveRight='1rem'
     >
-      <Heading as={motion.div} variants={fadeInBottomVariant} initial='hidden' whileInView='visible' size='h1' align='center'>
+      <Heading size='h4' as={motion.h4} variants={fadeInBottomVariant} initial='hidden' whileInView='visible' align='center'>
+        Have questions <LeText>or ideas? </LeText>  
+      </Heading>
+      <Heading as={motion.div} variants={fadeInBottomVariant} initial='hidden' whileInView='visible' size='h1'align='center'>
         Contact <LeText>me 📨 </LeText>     
       </Heading>
       <Flexcontainer responsiveFlex responsiveDirection='column-reverse' fullWidthChild>
