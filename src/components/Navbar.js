@@ -5,27 +5,29 @@ import { Logo, MenuHidden,  MenuItem,  NavLinksTop,  NavbarContainer } from '../
 import NavMenu from './layouts/NavMenu'
 import { AnimatePresence , motion } from 'framer-motion'
 import { navIcons } from '../utils/Data'
+import  { theme } from '../utils/Theme'
+
+
+
 
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  // eslint-disable-next-line no-unused-vars
   const [sticky, setSticky] = useState(false);
+
   useEffect(() => {
     const onScroll = () => {
-      window.scrollY > 90 ? setSticky(true) : setSticky(false);
-    };
+      window.scrollY > 50 ? setSticky(true) : setSticky(false);
+    }
   
     window.addEventListener('scroll', onScroll);
   
     // Cleanup the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-    };
-  }, []);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [])
   return (
     <NavbarContainer 
-      bgColor='transparent'>
+      bgColor={ sticky ? theme.colors.primary: 'transparent'} >
       <PaddingContainer top='1rem' bottom='1rem' responsiveRight='1rem'>
         <Container>
           <Flexcontainer justify='space-between' responsiveFlex>
