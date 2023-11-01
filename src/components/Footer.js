@@ -14,10 +14,10 @@ const Footer = () => {
     e.preventDefault()
 
     emailjs.sendForm('service_7pldyxd', 'template_j9mxg3k', form.current, 't0SFH_w25eWZFnpKn')
-      .then((result) => {
-          console.log(result.text)
-      }, (error) => {
-          console.log(error.text)
+      .then(() => {
+        alert('Your message sent!');
+      }, (err) => {
+        alert(JSON.stringify(err))
       })
       e.target.reset()
   }
