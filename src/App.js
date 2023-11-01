@@ -28,7 +28,6 @@ function App() {
         <Navbar />
         <Showcase />
         <MySkills />
-        <TextSphereMobile />
         <Projects />
         <Footer />
       </Container>
