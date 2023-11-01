@@ -54,29 +54,40 @@ const Footer = () => {
       <PaddingContainer top='3rem' as={motion.div} variants={fadeInRightVariant} initial='hidden' whileInView='visible'>
         <Flexcontainer justify='center'>
         <form className='formField' ref={form} onSubmit={sendEmail}>
+          <Heading as={motion.div} variants={fadeInBottomVariant} initial='hidden' whileInView='visible' size='h3'align='center'>
+          Via <LeText>email</LeText>     
+          </Heading>
+              <PaddingContainer top='2rem'>
+              <label className='labelFields'>Your Name</label> 
               <input className='inputField'
               type='name'
-              placeholder='Enter your name'
               name='user_name'
               required />
-                      
+              </PaddingContainer>
+
+              <PaddingContainer top='2rem'>
+              <label className='labelFields'>Your Email</label>       
               <input className='inputField'
               type='email'
-              placeholder='Enter your email'
               name='user_email'
               required />
+              </PaddingContainer>
 
+              <PaddingContainer top='2rem'>
+              <label className='labelFields'>Subject</label> 
               <input className='inputField'
               type='text'
-              placeholder='subject'
               name='subject'
               required />
+              </PaddingContainer>
 
+              <PaddingContainer top='2rem'>
+              <label className='labelFields'>Your Message</label> 
               <input className='messageField'
               type='textarea'
-              placeholder='message'
               name='message'
               required />
+              </PaddingContainer>
               <button className='btn1' type='submit'>📩</button>
             </form>
         </Flexcontainer>
