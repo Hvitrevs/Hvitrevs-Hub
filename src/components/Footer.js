@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import { Flexcontainer, Heading, IconContainer, LeText, PaddingContainer } from '../styles/GlobalStyled'
-import { ContactForm } from '../styles/Footer.styled'
 import { motion } from 'framer-motion'
 import { fadeInBottomVariant, fadeInLeftVariant, fadeInLeftVariantDelay, fadeInRightVariant } from '../utils/Variants'
 import { ContactCard, ContactCardContainer } from '../styles/MySkills.styled'
