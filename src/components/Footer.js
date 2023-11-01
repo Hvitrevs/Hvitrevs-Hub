@@ -1,14 +1,29 @@
-import React from 'react'
-import { Button, Flexcontainer, Heading, IconContainer, LeText, PaddingContainer } from '../styles/GlobalStyled'
-import { ContactForm, FormInput, FormLabel } from '../styles/Footer.styled'
+import React, { useRef } from 'react'
+import { Flexcontainer, Heading, IconContainer, LeText, PaddingContainer } from '../styles/GlobalStyled'
+import { ContactForm } from '../styles/Footer.styled'
 import { motion } from 'framer-motion'
 import { fadeInBottomVariant, fadeInLeftVariant, fadeInLeftVariantDelay, fadeInRightVariant } from '../utils/Variants'
 import { ContactCard, ContactCardContainer } from '../styles/MySkills.styled'
 import { Contacts } from '../utils/Data'
+import emailjs from '@emailjs/browser'
 
 // buiding contact form
 
 const Footer = () => {
+  const form = useRef()
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm('service_7pldyxd', 'template_j9mxg3k', form.current, 't0SFH_w25eWZFnpKn')
+      .then((result) => {
+          console.log(result.text)
+      }, (error) => {
+          console.log(error.text)
+      })
+      e.target.reset()
+  }
+
+
   return (
     <PaddingContainer 
       id='Contact'
@@ -32,64 +47,36 @@ const Footer = () => {
       {/* right side contact form */}
 
 
+
+
       <PaddingContainer top='3rem' as={motion.div} variants={fadeInRightVariant} initial='hidden' whileInView='visible'>
         <Flexcontainer justify='center'>
-          <ContactForm>
+        <form ref={form} onSubmit={sendEmail}>
+              <input 
+              type='text'
+              placeholder='Enter your name'
+              name='user_name'
+              required />
+                      
+              <input 
+              type='email'
+              placeholder='Enter your email'
+              name='user_email'
+              required />
 
-            <PaddingContainer
-              bottom='2rem'>
-                <FormLabel>
-                  Name:
-                </FormLabel>
-                <FormInput bgColor1='transparent'
-                  type='text'
-                  placeholder='Your name'
-                >
-                </FormInput>
-            </PaddingContainer>
+              <input 
+              type='text'
+              placeholder='subject'
+              name='subject'
+              required />
 
-            <PaddingContainer
-              bottom='2rem'>
-                <FormLabel>
-                  Email:
-                </FormLabel>
-                <FormInput bgColor1='transparent'
-                  type='text'
-                  placeholder='Your Email'
-                >
-                </FormInput>
-            </PaddingContainer>
-
-            <PaddingContainer
-              bottom='2rem'>
-                <FormLabel>
-                  Subject:
-                </FormLabel>
-                <FormInput bgColor1='transparent'
-                  type='text'
-                  placeholder='Subject'
-                >
-                </FormInput>
-            </PaddingContainer>
-
-            <PaddingContainer
-              bottom='2rem'>
-                <FormLabel>
-                  Message:
-                </FormLabel>
-                <FormInput bgColor1='#070f23'
-                  as='textarea'
-                  height='150px'
-                  placeholder='Enter Your Message'
-                >
-                </FormInput>
-            </PaddingContainer>
-
-            <Flexcontainer justify="center">
-              <Button >📩</Button>
-            </Flexcontainer>
-            
-          </ContactForm>
+              <input 
+              type='textarea'
+              placeholder='message'
+              name='message'
+              required />
+              <button type='submit'>📩</button>
+            </form>
         </Flexcontainer>
       </PaddingContainer>
 

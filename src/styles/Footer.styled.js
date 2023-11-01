@@ -14,6 +14,8 @@ export const FormLabel = styled.p`
   color: ${({ theme }) => theme.colors.white};
   padding-bottom: 10px;
 `
+
+
 export const FormInput = styled.input`
   width: 100%;
   border: none;
