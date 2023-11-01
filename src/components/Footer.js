@@ -57,7 +57,7 @@ const Footer = () => {
           <Heading as={motion.div} variants={fadeInBottomVariant} initial='hidden' whileInView='visible' size='h3'align='center'>
           Via <LeText>email</LeText>     
           </Heading>
-              <PaddingContainer top='2rem'>
+              <PaddingContainer top='4rem'>
               <label className='labelFields'>Your Name</label> 
               <input className='inputField'
               type='name'
@@ -65,7 +65,7 @@ const Footer = () => {
               required />
               </PaddingContainer>
 
-              <PaddingContainer top='2rem'>
+              <PaddingContainer top='1rem'>
               <label className='labelFields'>Your Email</label>       
               <input className='inputField'
               type='email'
@@ -73,7 +73,7 @@ const Footer = () => {
               required />
               </PaddingContainer>
 
-              <PaddingContainer top='2rem'>
+              <PaddingContainer top='1rem'>
               <label className='labelFields'>Subject</label> 
               <input className='inputField'
               type='text'
@@ -81,7 +81,7 @@ const Footer = () => {
               required />
               </PaddingContainer>
 
-              <PaddingContainer top='2rem'>
+              <PaddingContainer top='1rem'>
               <label className='labelFields'>Your Message</label> 
               <input className='messageField'
               type='textarea'
