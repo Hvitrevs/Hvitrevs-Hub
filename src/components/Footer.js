@@ -65,7 +65,7 @@ const Footer = () => {
               required />
               </PaddingContainer>
 
-              <PaddingContainer top='1rem'>
+              <PaddingContainer top='1.5rem'>
               <label className='labelFields'>Your Email</label>       
               <input className='inputField'
               type='email'
