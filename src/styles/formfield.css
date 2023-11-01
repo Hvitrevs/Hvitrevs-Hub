@@ -1,0 +1,55 @@
+
+
+.formField {
+  color: #85b2ce;
+  padding-bottom: 10px;
+
+
+}
+.inputField {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #d57c3d;
+  border-radius: 5px;
+  padding: 15px;
+  color: orange;
+  outline: none;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-family: ubuntu;
+  height: 5rem;
+  
+}
+.messageField{
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #d57c3d;
+  border-radius: 5px;
+  padding: 15px;
+  color: orange;
+  outline: none;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-family: ubuntu;
+  margin-top: 5rem;
+  height: 5rem;
+}
+.btn1{
+  width: max-content;
+  margin-top: 2rem;
+    padding: 1rem 1rem;
+    background-color: transparent;
+    border: 1px solid orange;
+    border-radius: 90%;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow:0 0 7px #ff8427;
+
+    &:hover{
+      
+      box-shadow:0 0 20px #2793ff;
+      border: transparent;
+    }
+}

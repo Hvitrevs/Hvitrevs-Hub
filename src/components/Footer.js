@@ -5,6 +5,7 @@ import { fadeInBottomVariant, fadeInLeftVariant, fadeInLeftVariantDelay, fadeInR
 import { ContactCard, ContactCardContainer } from '../styles/MySkills.styled'
 import { Contacts } from '../utils/Data'
 import emailjs from '@emailjs/browser'
+import '../styles/formfield.css'
 
 // buiding contact form
 
@@ -15,7 +16,7 @@ const Footer = () => {
 
     emailjs.sendForm('service_7pldyxd', 'template_j9mxg3k', form.current, 't0SFH_w25eWZFnpKn')
       .then(() => {
-        alert('Your message sent!');
+        alert('Your message has been sent!');
       }, (err) => {
         alert(JSON.stringify(err))
       })
@@ -38,6 +39,8 @@ const Footer = () => {
         Contact <LeText>me 📨 </LeText>     
       </Heading>
       <Flexcontainer responsiveFlex responsiveDirection='column-reverse' fullWidthChild>
+
+        
       {/* General header */}
 
 
@@ -50,31 +53,31 @@ const Footer = () => {
 
       <PaddingContainer top='3rem' as={motion.div} variants={fadeInRightVariant} initial='hidden' whileInView='visible'>
         <Flexcontainer justify='center'>
-        <form ref={form} onSubmit={sendEmail}>
-              <input 
-              type='text'
+        <form className='formField' ref={form} onSubmit={sendEmail}>
+              <input className='inputField'
+              type='name'
               placeholder='Enter your name'
               name='user_name'
               required />
                       
-              <input 
+              <input className='inputField'
               type='email'
               placeholder='Enter your email'
               name='user_email'
               required />
 
-              <input 
+              <input className='inputField'
               type='text'
               placeholder='subject'
               name='subject'
               required />
 
-              <input 
+              <input className='messageField'
               type='textarea'
               placeholder='message'
               name='message'
               required />
-              <button type='submit'>📩</button>
+              <button className='btn1' type='submit'>📩</button>
             </form>
         </Flexcontainer>
       </PaddingContainer>
@@ -103,6 +106,7 @@ const Footer = () => {
         </ContactCardContainer>
           </motion.div>
         </Flexcontainer>
+
 
 
       </PaddingContainer>
