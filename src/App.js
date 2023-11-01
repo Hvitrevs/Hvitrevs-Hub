@@ -7,7 +7,6 @@ import MySkills from "./components/MySkills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import TextSphereMobile from "./components/TextSphere/TextSphereMobile";
 import { BrowserRouter, Route,  Routes} from 'react-router-dom';
 import Apps from "./components/layouts/Apps";
 
