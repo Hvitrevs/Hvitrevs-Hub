@@ -73,7 +73,7 @@ const Footer = () => {
               required />
               </PaddingContainer>
 
-              <PaddingContainer top='1rem'>
+              <PaddingContainer top='1.5rem'>
               <label className='labelFields'>Subject</label> 
               <input className='inputField'
               type='text'
@@ -81,7 +81,7 @@ const Footer = () => {
               required />
               </PaddingContainer>
 
-              <PaddingContainer top='1rem'>
+              <PaddingContainer top='1.5rem'>
               <label className='labelFields'>Your Message</label> 
               <input className='messageField'
               type='textarea'
