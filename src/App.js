@@ -27,7 +27,7 @@ function App() {
         <Navbar />
         <Showcase />
         <MySkills />
-        <Projects />
+        <Projects />a
         <Footer />
       </Container>
     </MainBody> 

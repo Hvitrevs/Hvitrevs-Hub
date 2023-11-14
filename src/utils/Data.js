@@ -151,9 +151,9 @@ export const appsDetails = [
   },
   {
     id: 3,
-    app_name: 'Weather Desktop Application',
-    app_desc: 'This is a weather API utilizer that transforms API data from open-metio.com into readable responsive webpage.',
-    app_stack: ['Vite', 'JavaScript', 'Tailwind' ],
+    app_name: 'Simple Enemy Shooter',
+    app_desc: 'Simple one-wave shooter game with vanilla javascript, no frameworks or libraries. To win you have to last against at least 70 enemies. You lose if you have depleted all 20 lives.',
+    app_stack: ['JavaScript'],
     app_img: Desktop2,
     app_url: 'https://magical-concha-6ccb16.netlify.app',
     app_page:'https://github.com/Hvitrevs/Weather-app-',
