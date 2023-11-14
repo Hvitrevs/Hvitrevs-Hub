@@ -148,7 +148,7 @@ export const appsDetails = [
     app_img: Desktop,
     app_url: 'https://incandescent-vacherin-43b64e.netlify.app',
     app_page:'https://github.com/Hvitrevs/Sales-dashboard',
-    reverse: false,
+    reverse: true,
   },
   {
     id: 3,

@@ -20,14 +20,14 @@ function App() {
     <ThemeProvider theme ={ theme }>
     <MainBody>
       <Routes>
-      <Route path='' element={ <MainBody / >} />
+      <Route path='' element={ <MainBody /> } />
       <Route path='/more-apps' element={<Apps />} />
       </Routes>
       <Container>
         <Navbar />
         <Showcase />
         <MySkills />
-        <Projects />a
+        <Projects />
         <Footer />
       </Container>
     </MainBody> 

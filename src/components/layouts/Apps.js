@@ -21,13 +21,13 @@ const Apps = (  ) => {
         left= '18%'
         right= '15%'
         responsiveTop='0'
-        responsiveLeft='3rem'
-        respoinsiveRight='1rem'
+        responsiveLeft='6rem'
+        respoinsiveRight='2rem'
         responsiveBottom='4rem'
         position='fixed'
         >
         <Flexcontainer justify='flex-end'  responsiveFlex>
-          <Link to='/app#Home'>
+          <Link to='/app#Projects'>
           
           <MenuIcon as={motion.a} whileHover={{scale: 1.2}} size='1.2rem' top='4rem'
           >
@@ -62,7 +62,8 @@ const Apps = (  ) => {
         >
           <PaddingContainer 
           top='1rem' 
-          left='1rem' 
+          left='5rem' 
+          right='3rem'
           responsiveLeft='1rem'
           respoinsiveRight='4rem'>
           <Flexcontainer direction='column' align='center'>

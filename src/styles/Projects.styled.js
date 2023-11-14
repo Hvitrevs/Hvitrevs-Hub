@@ -52,7 +52,7 @@ overflow: auto;
 left: 0;
 height: 100%;
 width: 100%;
-background-color: #040c1e;
+background-color: ${({ theme }) => theme.colors.primary};
 z-index: 3;
 
 `
