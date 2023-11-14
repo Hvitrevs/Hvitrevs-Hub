@@ -2,6 +2,7 @@ import { FaReact, FaNode, FaDiscord,} from 'react-icons/fa';
 import { SiExpress, SiMongodb, } from 'react-icons/si';
 import Desktop2 from '../assets/desktop2.png';
 import Desktop from '../assets/desktop.png';
+import Shiny from '../assets/shiny-mermaid.png';
 import { GiSmartphone } from 'react-icons/gi';
 import { TbTools } from 'react-icons/tb';
 import {  PiArrowFatUpThin, PiFlyingSaucer } from 'react-icons/pi';
@@ -142,7 +143,7 @@ export const appsDetails = [
   {
     id: 1,
     app_name: 'Admin Dashboard Application',
-    app_desc: 'Front-End sales dashboart utilizing recharts into responsive webpage. No server side, demo version only.',
+    app_desc: 'Front-End sales dashboart utilizing recharts into responsive webpage. No server side, demo version charts only.',
     app_stack: ['Vite', 'TypeScript', 'SASS', 'React' ],
     app_img: Desktop,
     app_url: 'https://incandescent-vacherin-43b64e.netlify.app',
@@ -152,11 +153,11 @@ export const appsDetails = [
   {
     id: 3,
     app_name: 'Simple Enemy Shooter',
-    app_desc: 'Simple one-wave shooter game with vanilla javascript, no frameworks or libraries. To win you have to last against at least 70 enemies. You lose if you have depleted all 20 lives.',
+    app_desc: 'One-wave easy shooter game with pure vanilla JavaScript. To win you have to last against at least 70 enemies.',
     app_stack: ['JavaScript'],
-    app_img: Desktop2,
-    app_url: 'https://magical-concha-6ccb16.netlify.app',
-    app_page:'https://github.com/Hvitrevs/Weather-app-',
+    app_img: Shiny,
+    app_url: 'https://shiny-mermaid-881c44.netlify.app',
+    app_page:'https://github.com/Hvitrevs/expert-winner',
     reverse: false,
   },
 
